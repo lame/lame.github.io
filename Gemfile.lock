@@ -252,6 +252,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bundler (~> 1.17.2)
   github-pages
   jekyll-feed
   jekyll-seo-tag
