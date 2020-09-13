@@ -35,6 +35,8 @@ header_pages:
   - about.md
   - portfolio.md
 
+google_analytics: UA-173544701-2
+
 plugins:
   - jekyll-feed
 # Exclude from processing.
