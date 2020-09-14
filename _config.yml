@@ -20,6 +20,7 @@
 
 title: Ryan Kuhl's Dev Blog
 email: ryan@kuhl.dev
+author: Ryan Kuhl
 description: >- # this means to ignore newlines until "baseurl:"
   Dev blog and tutorials for datascience, web programming, python, and plenty else!
 
@@ -27,6 +28,13 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://www.kuhl.dev" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username: lame
+
+social:
+  name: Ryan Kuhl
+  links:
+    - https://github.com/lame/
+    - https://www.linkedin.com/in/kuhl/
+
 resume: ../assets/resume.pdf
 # Build settings
 theme: minima
@@ -39,6 +47,9 @@ google_analytics: UA-173544701-2
 
 plugins:
   - jekyll-feed
+  - jekyll-github-metadata
+  - jekyll-admin
+  - jekyll-sitemap
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
