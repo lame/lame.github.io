@@ -2,7 +2,11 @@
 title: Finding Outliers in Your Data
 layout: post
 date: '2020-09-14 09:28:57'
-tag: data_insights
+tag:
+- data_insights
+- R programming
+- R
+- ourliers
 ---
 
 In this first post, we're going to look at some techniques to determine if your
@@ -219,4 +223,3 @@ grubbs.test(new_gold, type = 10)
 ### Findings
 
 With the max value of the data set removed, we can see that the timeseries plot no longer includes a spike right at the top. The results from the grubbs test on the new dataset omiting the max value n olonger shows a suspected outlier at the upper threashold of the data. I'd say our work here is done!
-
