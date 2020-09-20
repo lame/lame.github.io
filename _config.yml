@@ -38,6 +38,10 @@ social:
 resume: ../assets/resume.pdf
 # Build settings
 theme: minima
+
+minima:
+  skin: dark
+
 show_excerpts: true
 header_pages:
   - about.md
