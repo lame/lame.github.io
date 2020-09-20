@@ -7,6 +7,7 @@ tag:
 - R programming
 - R
 - ourliers
+comments: true
 ---
 
 In this first post, we're going to look at some techniques to determine if your

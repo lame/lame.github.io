@@ -42,6 +42,9 @@ theme: minima
 minima:
   skin: dark
 
+disqus:
+  shortname: kuhl-dev
+
 show_excerpts: true
 header_pages:
   - about.md
