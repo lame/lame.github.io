@@ -158,7 +158,7 @@ grubbs.test(gold, type = 10)
 
 ### Grubbs Results
 
-So it looks like we do have an outlier, with a resonable p-value of 0.1965. The important thing here is to ask ourselves if that outlier is an error in the data, or if it is valuable data that needs to be included in our models to make them more realistic to real-world. For the purposes of this example, we're going to simply assume that there was a one-day run on gold that is not likely to occur again and is not representative of our dataset as a whole.
+So it looks like we do have an outlier, with a p-value that is approaching significance of 0.1965. The important thing here is to ask ourselves if that outlier is an error in the data, or if it is valuable data that needs to be included in our models to make them more realistic to real-world. For the purposes of this example, we're going to simply assume that there was a one-day run on gold that is not likely to occur again and is not representative of our dataset as a whole.
 
 
 ```R
