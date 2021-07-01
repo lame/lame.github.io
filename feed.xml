@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://www.kuhl.dev/feed.xml" rel="self" type="application/atom+xml" /><link href="https://www.kuhl.dev/" rel="alternate" type="text/html" /><updated>2021-07-01T19:14:22+00:00</updated><id>https://www.kuhl.dev/feed.xml</id><title type="html">Ryan Kuhl’s Dev Blog</title><subtitle>Dev blog and tutorials for data science, web programming, python, and plenty else!</subtitle><author><name>Ryan Kuhl</name></author><entry><title type="html">Finding Outliers in Your Data</title><link href="https://www.kuhl.dev/2020/09/14/finding-outliers-in-your-data.html" rel="alternate" type="text/html" title="Finding Outliers in Your Data" /><published>2020-09-14T09:28:57+00:00</published><updated>2020-09-14T09:28:57+00:00</updated><id>https://www.kuhl.dev/2020/09/14/finding-outliers-in-your-data</id><content type="html" xml:base="https://www.kuhl.dev/2020/09/14/finding-outliers-in-your-data.html">&lt;p&gt;In this first post, we’re going to look at some techniques to determine if your
+data has outliers present. We’re going to go through this exercise in R
+(for the stats folks out there)!&lt;/p&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;rm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;list&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ls&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;())&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;outliers&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;mosaic&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;library&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;stats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;set.seed&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;.packages&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;all.available&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;kc&quot;&gt;TRUE&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;package&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'forecast'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot.ts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Gold Prices Data&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;favstats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+&lt;caption&gt;A data.frame: 1 × 9&lt;/caption&gt;
+&lt;thead&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;min&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q1&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;median&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q3&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;max&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;mean&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;sd&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;n&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;missing&lt;/th&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;&lt;/th&gt;&lt;td&gt;285&lt;/td&gt;&lt;td&gt;337.6625&lt;/td&gt;&lt;td&gt;403.225&lt;/td&gt;&lt;td&gt;443.675&lt;/td&gt;&lt;td&gt;593.7&lt;/td&gt;&lt;td&gt;392.5333&lt;/td&gt;&lt;td&gt;56.60597&lt;/td&gt;&lt;td&gt;1074&lt;/td&gt;&lt;td&gt;34&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-09-13-finding-outliers-in-your-data/output_2_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hmm, I guess this looks semi-normal with some skewness to the right. Just to be double sure, let’s see some normal data…&lt;/p&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# A box-and-whisker plot should show any outliers clearly&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;data.frame&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;as.vector&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ggplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;df&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;aes&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;+&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;geom_boxplot&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-09-13-finding-outliers-in-your-data/output_4_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That upper whisker is not indicating a clear outlier, which would be a dot past the end of the whisker, but my gut is still telling me that the spike to nearly 600 in the above timeseries plot is an outlier. One great method of finding outliers is using a grubbs test! The only problem is that the grubbs test expects the data to be normally distributed. Let’s check out if our data is close to a normal distribution&lt;/p&gt;
+
+&lt;p&gt;As a quick asside, my use of the
+&lt;a href=&quot;https://www.statisticshowto.com/empirical-distribution-function/&quot;&gt;ECDF function&lt;/a&gt; is
+inspired by a post from &lt;a href=&quot;http://ericmjl.com/blog/2018/7/14/ecdfs/&quot;&gt;eric-mjl&lt;/a&gt;. Join his
+mailing list if you can!&lt;/p&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# What the heck does normal data look like&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_normal_data&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;rnorm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;m&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;favstats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_normal_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot.ecdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_normal_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ecdf(x) of Normally Distributed Data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qqnorm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_normal_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Quantile-Quantile (QQ) plot of Normally Distributed Data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qqline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random_normal_data&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lwd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;bottomright&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Data Points&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Theoretical Normal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+&lt;caption&gt;A data.frame: 1 × 9&lt;/caption&gt;
+&lt;thead&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;min&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q1&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;median&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q3&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;max&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;mean&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;sd&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;n&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;missing&lt;/th&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;&lt;/th&gt;&lt;td&gt;-2.786015&lt;/td&gt;&lt;td&gt;-0.5789328&lt;/td&gt;&lt;td&gt;-0.003405082&lt;/td&gt;&lt;td&gt;0.7091181&lt;/td&gt;&lt;td&gt;2.674871&lt;/td&gt;&lt;td&gt;0.03164366&lt;/td&gt;&lt;td&gt;1.081341&lt;/td&gt;&lt;td&gt;100&lt;/td&gt;&lt;td&gt;0&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-09-13-finding-outliers-in-your-data/output_6_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-09-13-finding-outliers-in-your-data/output_6_2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;favstats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Does our data look normally distributed?&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot.ecdf&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'ecdf(x) of Gold Prices Data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qqnorm&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Quantile-Quantile (QQ) plot of Gold Prices Data'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;qqline&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;col&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lwd&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;legend&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;bottomright&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Data Points&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Theoretical Normal&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;),&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;fill&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;c&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;black&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;red&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+&lt;caption&gt;A data.frame: 1 × 9&lt;/caption&gt;
+&lt;thead&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;min&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q1&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;median&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q3&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;max&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;mean&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;sd&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;n&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;missing&lt;/th&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;&lt;/th&gt;&lt;td&gt;285&lt;/td&gt;&lt;td&gt;337.6625&lt;/td&gt;&lt;td&gt;403.225&lt;/td&gt;&lt;td&gt;443.675&lt;/td&gt;&lt;td&gt;593.7&lt;/td&gt;&lt;td&gt;392.5333&lt;/td&gt;&lt;td&gt;56.60597&lt;/td&gt;&lt;td&gt;1074&lt;/td&gt;&lt;td&gt;34&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-09-13-finding-outliers-in-your-data/output_7_1.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-09-13-finding-outliers-in-your-data/output_7_2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It’s important to note that a grubbs test expects normality, and as the data isn’t strictly normal there can be some concerns about the validity of the results.&lt;/p&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;grubbs.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	Grubbs test for one outlier
+
+data:  gold
+G = 3.55381, U = 0.98822, p-value = 0.1965
+alternative hypothesis: highest value 593.7 is an outlier
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;grubbs-results&quot;&gt;Grubbs Results&lt;/h3&gt;
+
+&lt;p&gt;So it looks like we do have an outlier, with a p-value that is approaching significance of 0.1965. The important thing here is to ask ourselves if that outlier is an error in the data, or if it is valuable data that needs to be included in our models to make them more realistic to real-world. For the purposes of this example, we’re going to simply assume that there was a one-day run on gold that is not likely to occur again and is not representative of our dataset as a whole.&lt;/p&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# Let's go ahead and remove that max value we think is the outlier&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_gold&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;lt;-&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;which.max&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)]&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Let's compare the old summary to the new summary&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;favstats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;favstats&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+
+&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;# Lastly, let's take a look at the timeseries plot again&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;plot.ts&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;Gold Prices w/o Outlier Data&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;table&gt;
+&lt;caption&gt;A data.frame: 1 × 9&lt;/caption&gt;
+&lt;thead&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;min&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q1&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;median&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q3&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;max&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;mean&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;sd&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;n&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;missing&lt;/th&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;&lt;/th&gt;&lt;td&gt;285&lt;/td&gt;&lt;td&gt;337.6625&lt;/td&gt;&lt;td&gt;403.225&lt;/td&gt;&lt;td&gt;443.675&lt;/td&gt;&lt;td&gt;593.7&lt;/td&gt;&lt;td&gt;392.5333&lt;/td&gt;&lt;td&gt;56.60597&lt;/td&gt;&lt;td&gt;1074&lt;/td&gt;&lt;td&gt;34&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;table&gt;
+&lt;caption&gt;A data.frame: 1 × 9&lt;/caption&gt;
+&lt;thead&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;min&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q1&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;median&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;Q3&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;max&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;mean&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;sd&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;n&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;missing&lt;/th&gt;&lt;/tr&gt;
+	&lt;tr&gt;&lt;th&gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;dbl&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;th scope=&quot;col&quot;&gt;&amp;lt;int&amp;gt;&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+	&lt;tr&gt;&lt;th scope=&quot;row&quot;&gt;&lt;/th&gt;&lt;td&gt;285&lt;/td&gt;&lt;td&gt;337.6&lt;/td&gt;&lt;td&gt;403.1&lt;/td&gt;&lt;td&gt;443.6&lt;/td&gt;&lt;td&gt;502.75&lt;/td&gt;&lt;td&gt;392.3459&lt;/td&gt;&lt;td&gt;56.29777&lt;/td&gt;&lt;td&gt;1073&lt;/td&gt;&lt;td&gt;34&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/2020-09-13-finding-outliers-in-your-data/output_11_2.png&quot; alt=&quot;png&quot; /&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-R highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;grubbs.test&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;new_gold&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;o&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;w&quot;&gt; &lt;/span&gt;&lt;span class=&quot;m&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;w&quot;&gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;	Grubbs test for one outlier
+
+data:  new_gold
+G = 1.96107, U = 0.99641, p-value = 1
+alternative hypothesis: highest value 502.75 is an outlier
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;findings&quot;&gt;Findings&lt;/h3&gt;
+
+&lt;p&gt;With the max value of the data set removed, we can see that the timeseries plot no longer includes a spike right at the top. The results from the grubbs test on the new dataset omiting the max value n olonger shows a suspected outlier at the upper threashold of the data. I’d say our work here is done!&lt;/p&gt;</content><author><name>Ryan Kuhl</name></author><category term="data_insights" /><category term="R programming" /><category term="R" /><category term="ourliers" /><summary type="html">In this first post, we’re going to look at some techniques to determine if your data has outliers present. We’re going to go through this exercise in R (for the stats folks out there)!</summary></entry></feed>
