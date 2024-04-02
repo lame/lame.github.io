@@ -1,0 +1,69 @@
+<h1 id="analogical_reasoning">Analogical_Reasoning<a aria-hidden="true" class="anchor-heading icon-link" href="#analogical_reasoning"></a></h1>
+<ul>
+<li>Represented by two objects connected by a relationship
+<ul>
+<li>features of objects and values of features of objects can create similarity as well</li>
+</ul>
+</li>
+</ul>
+<h2 id="cross-domain-analogy">Cross Domain Analogy<a aria-hidden="true" class="anchor-heading icon-link" href="#cross-domain-analogy"></a></h2>
+<p>patient/laser problem relation to army/road problem</p>
+<h3 id="similarity">Similarity<a aria-hidden="true" class="anchor-heading icon-link" href="#similarity"></a></h3>
+<p><img src="/./assets/analogical_reasoning_similarity_spectrum.png" alt="similarity spectrum"></p>
+<ul>
+<li>
+<p>Superficial: deals with features, counts, objects</p>
+</li>
+<li>
+<p>Deep: deals with relationships between objects, relationships between relationships</p>
+</li>
+<li>
+<p>Semantic: conceptual similarity between target and source case</p>
+</li>
+<li>
+<p>Pragmatic: similarity of <strong>external</strong> factors, such as goals</p>
+</li>
+<li>
+<p>Structural: similarity between representational structures</p>
+</li>
+</ul>
+<h2 id="phases">Phases<a aria-hidden="true" class="anchor-heading icon-link" href="#phases"></a></h2>
+<p>Case base reasoning is very similar to analogical reasoning, but analogical reasoning has a mapping and transfer step in addition.</p>
+<h3 id="retrieval">Retrieval<a aria-hidden="true" class="anchor-heading icon-link" href="#retrieval"></a></h3>
+<p>When talking about the relationship of an electron to a neutron in an atom, retrive example of planet relationship to sun in the solar system.</p>
+<p>Type of similarity is important, see ##Similarity</p>
+<p>case-based reasioning would likely only pull superficially similar or deeply and superficially similar analogies.</p>
+<h3 id="mapping">Mapping<a aria-hidden="true" class="anchor-heading icon-link" href="#mapping"></a></h3>
+<p>What in the source problem pertains to what in the target problem.</p>
+<p>Solve the correspondence problem:</p>
+<ul>
+<li>give higher-order relationships priority over lower-order relationships</li>
+<li>18.11 lecture</li>
+<li>patient/army analogy mapping should be based on goal. Army's goal is to kill king, laser's goal is to kill tumor</li>
+</ul>
+<h3 id="transfer">Transfer<a aria-hidden="true" class="anchor-heading icon-link" href="#transfer"></a></h3>
+<p><img src="/./assets/analogical_reasoning_target_source.png" alt="target/source"></p>
+<p>Once correspondence has been established:
+induce a pattern of relationships</p>
+<ul>
+<li>goal: kill king / remove tumor</li>
+<li>obsticle: road mines / healthy tissue</li>
+<li>resource: soldiers / lasers</li>
+<li>strategy: decompose resource, arrive at location at the same time</li>
+</ul>
+<p><img src="/./assets/analogical_resoning_graph.png" alt="graph"></p>
+<p>In a graphical representation, the vertices represent the objects and features, the edges are representing relationships</p>
+<h3 id="evaluation">Evaluation<a aria-hidden="true" class="anchor-heading icon-link" href="#evaluation"></a></h3>
+<p>Evaluation can reach out to prior states, such as retrieval, mapping or transfer to help a source get closer to the goal.</p>
+<h3 id="storage">Storage<a aria-hidden="true" class="anchor-heading icon-link" href="#storage"></a></h3>
+<p>Store case and solution as a source case and keep for case-based reasoning</p>
+<h2 id="compound-analogy">Compound Analogy<a aria-hidden="true" class="anchor-heading icon-link" href="#compound-analogy"></a></h2>
+<p>Use parts of several analogies to combine into one source.</p>
+<h2 id="issues-w-analogical-reasoning">Issues w/ Analogical Reasoning<a aria-hidden="true" class="anchor-heading icon-link" href="#issues-w-analogical-reasoning"></a></h2>
+<ul>
+<li>different cases may not have common vocabulary</li>
+<li>Abstraction and transformation</li>
+<li>Compound and compositional analogies</li>
+<li>Visuospacial analogies</li>
+<li>Conceptual combination</li>
+</ul>

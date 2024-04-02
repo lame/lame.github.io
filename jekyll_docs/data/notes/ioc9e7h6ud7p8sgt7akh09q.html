@@ -1,0 +1,28 @@
+<h1 id="incremental_concept_learning">Incremental_Concept_Learning<a aria-hidden="true" class="anchor-heading icon-link" href="#incremental_concept_learning"></a></h1>
+<ul>
+<li>Makes strong use of background knowledge</li>
+</ul>
+<p>1) Learning is incremental
+2) Examples are labeled (supervised)
+3) Examples can come in a particular order, positive then negative maybe
+4) Different from case-based reasoning as it uses abstract concepts
+5) Number of examples to abstract concepts from is small
+6) Generalize / Specialize trade-off</p>
+<p><img src="/./assets/incremental_concept_learning.png" alt="incremental concept learning"></p>
+<h2 id="variabilization">Variabilization<a aria-hidden="true" class="anchor-heading icon-link" href="#variabilization"></a></h2>
+<p><img src="/./assets/variabilization.png" alt="variabilization"></p>
+<p>Take a concrete concept like bricks stacked like a house and create abstract variables
+like Brick and relationships like supports and left-of</p>
+<h2 id="specialization">Specialization<a aria-hidden="true" class="anchor-heading icon-link" href="#specialization"></a></h2>
+<ul>
+<li><strong>Require link heuristic</strong>, where some links are necessary to represent things not represented by a negative supervised example</li>
+<li><strong>Forbid Link Heuristic</strong>, opposite of require link, shows as logical not in link name</li>
+</ul>
+<h2 id="generalization">Generalization<a aria-hidden="true" class="anchor-heading icon-link" href="#generalization"></a></h2>
+<ul>
+<li><strong>Drop link heuristic</strong>, where we want to drop a link to turn somethin from too specific to more general is shown in <a href="#variabilization">Variabilization</a></li>
+<li><strong>Enlarge-Set Heuristic</strong>, where a node is combined to be several possible types</li>
+<li><strong>Climb-Tree Heuristic</strong>, where a type has inheritance, a block is an example of a brick or a wedge. IMPORTANT THIS IS DIRECTED AND <strong>NOT BI-DIRECTIONAL</strong></li>
+<li><strong>Close-Interval</strong>, expand range of values to be a positive example of the concept</li>
+</ul>
+<h2 id="heuristics-for-specialization-and-generalization">Heuristics for Specialization and Generalization<a aria-hidden="true" class="anchor-heading icon-link" href="#heuristics-for-specialization-and-generalization"></a></h2>

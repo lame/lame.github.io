@@ -1,0 +1,11 @@
+<h1 id="version_spaces">Version_Spaces<a aria-hidden="true" class="anchor-heading icon-link" href="#version_spaces"></a></h1>
+<h2 id="algorithm-for-version-spaces">Algorithm for Version spaces<a aria-hidden="true" class="anchor-heading icon-link" href="#algorithm-for-version-spaces"></a></h2>
+<p>1) Begin with two models, the most specialized and the most general model possible.
+2) If the example is a positive example, generalize the specalized model to include the positive example and prune away from the general model that cannot include it
+3) If the example is a negative example, specialize the general model to exclude the negative example, prune away from the specific models that do not exclude it
+4) Prune away any version spaces subsumed by earlier version spaces</p>
+<h2 id="tree-based-representations">Tree-Based Representations<a aria-hidden="true" class="anchor-heading icon-link" href="#tree-based-representations"></a></h2>
+<ul>
+<li>Decision trees create more optimal trees, but require all the examples up-front</li>
+<li>Discrimination trees create less optimal trees, but can learn incrementally</li>
+</ul>

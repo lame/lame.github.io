@@ -1,0 +1,123 @@
+<h1 id="logic">Logic<a aria-hidden="true" class="anchor-heading icon-link" href="#logic"></a></h1>
+<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mo>∨</mo><mo separator="true">,</mo><mo>∨</mo><mo>∧</mo><mspace></mspace><mspace width="0.1111em"></mspace><mo lspace="0em" rspace="0.17em"></mo><mtext> ⁣</mtext><mo lspace="0em" rspace="0em">:</mo><mspace width="0.3333em"></mspace><mo>⊕</mo><mo>⊗</mo><mi mathvariant="normal">¬</mi><mi mathvariant="normal">∀</mi><mi mathvariant="normal">∃</mi></mrow><annotation encoding="application/x-tex">\vee, \lor \wedge \colon \oplus \otimes \lnot \forall \exists</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.1944em;"></span><span class="mord">∨</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord">∨</span><span class="mord">∧</span><span class="mspace nobreak"></span><span class="mspace" style="margin-right:0.1111em;"></span><span class="mpunct"></span><span class="mspace" style="margin-right:-0.1667em;"></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mrel">:</span></span><span class="mspace" style="margin-right:0.3333em;"></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">⊕</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord">⊗</span><span class="mord">¬∀∃</span></span></span></span></span></div>
+<h2 id="formal-notation">Formal Notation<a aria-hidden="true" class="anchor-heading icon-link" href="#formal-notation"></a></h2>
+<ul>
+<li>
+<p>Inference: agent will use knowledge and logic to provide inference</p>
+</li>
+<li>
+<p>Soundness: Only valid conclusions can be proven</p>
+</li>
+<li>
+<p>Completeness: All valid conclusions can be proven</p>
+</li>
+<li>
+<p>Predicate: a function that maps object args to T/F</p>
+<ul>
+<li>Feathers(bluebird) >>> True</li>
+</ul>
+</li>
+</ul>
+<p>Implication x implies y, <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⇒</mo></mrow><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">⇒</span></span></span></span></span></p>
+<h2 id="conjunctions-disjunctions-negations-implications">Conjunctions, Disjunctions, Negations, Implications<a aria-hidden="true" class="anchor-heading icon-link" href="#conjunctions-disjunctions-negations-implications"></a></h2>
+<h3 id="conjunction">Conjunction<a aria-hidden="true" class="anchor-heading icon-link" href="#conjunction"></a></h3>
+<p>if an animal lays eggs and an animal flies than the animal is a bird</p>
+<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>If Lays-eggs(animal)</mtext><mo>∧</mo><mtext>Flies(animal)</mtext><mo>⇒</mo><mtext>Then Bird(animal)</mtext></mrow><annotation encoding="application/x-tex">\text{If Lays-eggs(animal)} \wedge \text{Flies(animal)} \Rightarrow \text{Then Bird(animal)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">If Lays-eggs(animal)</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Flies(animal)</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Then Bird(animal)</span></span></span></span></span></span></div>
+<h3 id="disjunction">Disjunction<a aria-hidden="true" class="anchor-heading icon-link" href="#disjunction"></a></h3>
+<p>if an animal lays eggs or an animal flies than the animal is a bird</p>
+<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Lays-eggs(animal)</mtext><mo>∨</mo><mtext>Flies(animal)</mtext><mo>⇒</mo><mtext>Then Bird(animal)</mtext></mrow><annotation encoding="application/x-tex">\text{Lays-eggs(animal)} \vee \text{Flies(animal)} \Rightarrow \text{Then Bird(animal)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Lays-eggs(animal)</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Flies(animal)</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Then Bird(animal)</span></span></span></span></span></span></div>
+<p>If an animal flies and is not a bird, it is a bat</p>
+<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Flies(animal)</mtext><mo>∧</mo><mi mathvariant="normal">¬</mi><mtext>Bird(animal)</mtext><mo>⇒</mo><mtext>Bat(animal)</mtext></mrow><annotation encoding="application/x-tex">\text{Flies(animal)} \wedge \lnot\text{Bird(animal)} \Rightarrow \text{Bat(animal)}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Flies(animal)</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mord text"><span class="mord">Bird(animal)</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord text"><span class="mord">Bat(animal)</span></span></span></span></span></span></div>
+<h2 id="truth-tables">Truth Tables<a aria-hidden="true" class="anchor-heading icon-link" href="#truth-tables"></a></h2>
+<ul>
+<li>Demorgan's law <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mo stretchy="false">(</mo><mi>A</mi><mo>∧</mo><mi>B</mi><mo stretchy="false">)</mo><mo>=</mo><mo>=</mo><mi mathvariant="normal">¬</mi><mi>A</mi><mo>∨</mo><mi mathvariant="normal">¬</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">\lnot(A\wedge B) == \lnot A \vee \lnot B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord">¬</span><span class="mopen">(</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∧</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">==</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">¬</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">¬</span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></span>
+<ul>
+<li>The outer not flips the inner operation</li>
+</ul>
+</li>
+</ul>
+<p>Kinda weird logic for "Implies" <span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>⇒</mo></mrow><annotation encoding="application/x-tex">\Rightarrow</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.3669em;"></span><span class="mrel">⇒</span></span></span></span></span></p>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>A</th><th>B</th><th align="center"><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⇒</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A\Rightarrow B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></span></th></tr></thead><tbody><tr><td>T</td><td>T</td><td align="center">T</td></tr><tr><td>T</td><td>F</td><td align="center">F</td></tr><tr><td>F</td><td>T</td><td align="center">T</td></tr><tr><td>F</td><td>F</td><td align="center">T</td></tr></tbody></table></div>
+<p><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>A</mi><mo>⇒</mo><mi>B</mi><mo>=</mo><mo>=</mo><mi mathvariant="normal">¬</mi><mi>A</mi><mo>∨</mo><mi>B</mi></mrow><annotation encoding="application/x-tex">A \Rightarrow B == \lnot A \vee B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">==</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">¬</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">∨</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05017em;">B</span></span></span></span></span></p>
+<h2 id="rules-of-inference">Rules of Inference<a aria-hidden="true" class="anchor-heading icon-link" href="#rules-of-inference"></a></h2>
+<h3 id="modus-ponens">Modus Ponens<a aria-hidden="true" class="anchor-heading icon-link" href="#modus-ponens"></a></h3>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>x</th><th>Logic</th></tr></thead><tbody><tr><td>Sentence 1</td><td><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P \Rightarrow Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span></span></td></tr><tr><td>Sentence 2</td><td><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi></mrow><annotation encoding="application/x-tex">P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span></span></td></tr><tr><td>Sentence 3</td><td><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span></span></td></tr></tbody></table></div>
+<h3 id="modus-tollens">Modus Tollens<a aria-hidden="true" class="anchor-heading icon-link" href="#modus-tollens"></a></h3>
+<div class="table-responsive">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<table><thead><tr><th>x</th><th>Logic</th></tr></thead><tbody><tr><td>Sentence 1</td><td><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>P</mi><mo>⇒</mo><mi>Q</mi></mrow><annotation encoding="application/x-tex">P \Rightarrow Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⇒</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">Q</span></span></span></span></span></td></tr><tr><td>Sentence 2</td><td><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mi>Q</mi></mrow><annotation encoding="application/x-tex">\lnot Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8778em;vertical-align:-0.1944em;"></span><span class="mord">¬</span><span class="mord mathnormal">Q</span></span></span></span></span></td></tr><tr><td>Sentence 3</td><td><span class="math math-inline"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi mathvariant="normal">¬</mi><mi>P</mi></mrow><annotation encoding="application/x-tex">\lnot P</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord">¬</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span></span></span></span></span></td></tr></tbody></table></div>
+<h2 id="resolution-theorem-proving">Resolution Theorem Proving<a aria-hidden="true" class="anchor-heading icon-link" href="#resolution-theorem-proving"></a></h2>
+<ul>
+<li>Prove the opposite of what we're trying to prove</li>
+<li>Start by eliminating the thing you're trying to prove with the contrapositive in the full sentence</li>
+</ul>

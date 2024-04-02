@@ -1,0 +1,63 @@
+<h1 id="frames">Frames<a aria-hidden="true" class="anchor-heading icon-link" href="#frames"></a></h1>
+<p>A structured knowledge representation, "the meaning of the meaning"</p>
+<p>Think that a frame is a molecule rather than an atom</p>
+<p>Cognative processing w/ frames is bottom up (from natural languang to representation)
+and top down (from memory to structured representation).</p>
+<p>Stereotypes are cognatively efficient, so frames represent stereotypes</p>
+<h2 id="structure-of-frames">Structure of Frames<a aria-hidden="true" class="anchor-heading icon-link" href="#structure-of-frames"></a></h2>
+<p>A frame is a knowledge structure</p>
+<pre><code>Ashok ate a frog:
+
+Ate (verb frame)
+    Subject: Ashok
+    Object: Frog
+    Location: Stomach (now)
+    Time: past
+    Utensils: ?
+    Object-Alive: False
+    Object-is: in-subject
+    Subject-mood: Happy
+
+</code></pre>
+<p>Slots (Subject, Object, etc.) &#x26; Fillers (Ashok, Frog, etc.)</p>
+<p>Slots on a frame can have a pointer to another frame, for instance the <code>Subject</code>
+slot above could point to a noun-frame of Ashok. Allows for a discourse level
+understanding rather than a sentence level understanding.</p>
+<pre><code>Ate (verb)
+    Subject: -> Ashok
+
+Ashok (noun)
+    Title: Professor
+    Location: Atlanta, GA
+</code></pre>
+<h2 id="properties-of-frames">Properties of Frames<a aria-hidden="true" class="anchor-heading icon-link" href="#properties-of-frames"></a></h2>
+<ul>
+<li>Frames represent stereotypes of the key word for the frame, like <code>Ate</code></li>
+<li>Provides default values</li>
+<li>Takes advantage of inheritance and instances</li>
+</ul>
+<pre><code>Animal
+    num-arms: (default value)
+    num-legs: (default value)
+
+Human (type of animal) - Class
+    num-arms: 2
+    num-legs: 2
+    job:
+    name:
+
+Human (type of animal) - Instance
+    num-arms: 2
+    num-legs: 2
+    job: Professor
+    name: Ashok
+</code></pre>
+<ul>
+<li>Frames can be used to as a structured representation to store a sentence of input, and can be used to generate a sentence of output.</li>
+</ul>
+<h2 id="representations">Representations<a aria-hidden="true" class="anchor-heading icon-link" href="#representations"></a></h2>
+<p>Similar to semantic nets, production systems</p>
+<p><img src="/./assets/Procedural_frame.png" alt="Procedural frame"></p>
+<p>1) Ate gets added to the working memory
+2) The slots and default filler values get loaded from semantic memory into working mem</p>
+<h2 id="story-understanding">Story Understanding<a aria-hidden="true" class="anchor-heading icon-link" href="#story-understanding"></a></h2>
