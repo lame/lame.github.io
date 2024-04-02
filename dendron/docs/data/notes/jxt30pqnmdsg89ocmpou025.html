@@ -1,0 +1,39 @@
+<h1 id="learning_by_correcting_mistakes">Learning_by_Correcting_Mistakes<a aria-hidden="true" class="anchor-heading icon-link" href="#learning_by_correcting_mistakes"></a></h1>
+<h2 id="explanation-based-learning-revisited">Explanation-based Learning Revisited<a aria-hidden="true" class="anchor-heading icon-link" href="#explanation-based-learning-revisited"></a></h2>
+<p>Explain why an error led to a failure</p>
+<ul>
+<li>The cup example of explaining what a cup is based on attribtutes.</li>
+</ul>
+<p><img src="/./assets/cup_explanation.png" alt="cup explanation"></p>
+<p>The agent created an explanation of a cup, but it was incorrect, how does it correct for what made the explanation incorrect?</p>
+<h2 id="isolating-mistakes">Isolating Mistakes<a aria-hidden="true" class="anchor-heading icon-link" href="#isolating-mistakes"></a></h2>
+<p>How can the agent isolate the error in it's former model?</p>
+<ul>
+<li>Venn diagram where left circle is characteristics of a positive example
+<ul>
+<li>Right circle is characteristics of a negative example</li>
+<li>The right outer join of the venn diagram are "false suspicious features"</li>
+</ul>
+</li>
+</ul>
+<p>In order to attempt to correct, the agent can retry with just false suspicious features to see if that feature is a negative characteristic</p>
+<p>Algo for isolating mistakes:</p>
+<pre><code>To find all suspicious true-success relations:
+- Intersect all true success $\bigcap T$
+- Union all false successes $\bigcup T$
+- Remove assersions in union from intersection $\bigcap T - \bigcup F$
+
+To find all suspicious false-success relations:
+- Intersect all false success $\bigcap F$
+- Union all true success $\bigcup T$
+- Remove all assersions in union from intersection $\bigcap F - \bigcup T$
+</code></pre>
+<h2 id="explaining-mistakes">Explaining Mistakes<a aria-hidden="true" class="anchor-heading icon-link" href="#explaining-mistakes"></a></h2>
+<p>How can the agent explain the problem that led to the error?</p>
+<p>"Why is the handle being fixed important to an item being a cup?"</p>
+<p>Without explaining the mistakes, the agent can't truly learn and create optimal entries in the tree</p>
+<h2 id="correcting-mistakes">Correcting Mistakes<a aria-hidden="true" class="anchor-heading icon-link" href="#correcting-mistakes"></a></h2>
+<p>How can the agent repair the model to prevent the error from recurring?</p>
+<ul>
+<li>Errors can be in agent model or agent architecture</li>
+</ul>

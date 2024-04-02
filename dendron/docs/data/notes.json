@@ -1,0 +1,2050 @@
+{
+  "notes": {
+    "403": {
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "fname": "403",
+      "id": "403",
+      "title": "This page has not yet sprouted",
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1712017294304,
+      "created": 1712017294305,
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": null,
+      "data": {}
+    },
+    "tnnw3egk8r06crz3yy17h9s": {
+      "id": "tnnw3egk8r06crz3yy17h9s",
+      "title": "Root",
+      "desc": "",
+      "updated": 1703610625261,
+      "created": 1703610625261,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "e73e27f3d623ae8b7915aa670b746db2",
+      "links": [],
+      "anchors": {
+        "welcome-to-dendron": {
+          "type": "header",
+          "text": "Welcome to Dendron",
+          "value": "welcome-to-dendron",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "lookup": {
+          "type": "header",
+          "text": "Lookup",
+          "value": "lookup",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "ludzi9gs8nne0hesa50nnsp"
+      ],
+      "parent": null,
+      "data": {}
+    },
+    "ludzi9gs8nne0hesa50nnsp": {
+      "fname": "School",
+      "stub": true,
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "schemaStub": false,
+      "type": "note",
+      "updated": 1712017293762,
+      "created": 1712017293762,
+      "id": "ludzi9gs8nne0hesa50nnsp",
+      "desc": "",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "xgs2jqf5uqbaazklxte11ga"
+      ],
+      "parent": "tnnw3egk8r06crz3yy17h9s",
+      "data": {},
+      "title": "School"
+    },
+    "xgs2jqf5uqbaazklxte11ga": {
+      "id": "xgs2jqf5uqbaazklxte11ga",
+      "title": "KBAI",
+      "desc": "",
+      "updated": 1708635430861,
+      "created": 1703610703366,
+      "custom": {},
+      "fname": "School.KBAI",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "5b0d985a4abb8539cd47fcab54cc7836",
+      "links": [],
+      "anchors": {
+        "intro-to-kbai": {
+          "type": "header",
+          "text": "Intro to KBAI",
+          "value": "intro-to-kbai",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "knowledge-representations": {
+          "type": "header",
+          "text": "Knowledge Representations",
+          "value": "knowledge-representations",
+          "line": 33,
+          "column": 0,
+          "depth": 3
+        },
+        "problem-solving-techniques": {
+          "type": "header",
+          "text": "Problem Solving Techniques",
+          "value": "problem-solving-techniques",
+          "line": 37,
+          "column": 0,
+          "depth": 3
+        },
+        "architectures": {
+          "type": "header",
+          "text": "Architectures",
+          "value": "architectures",
+          "line": 41,
+          "column": 0,
+          "depth": 3
+        },
+        "fundamental-processes-of-kbai-cognative-systems": {
+          "type": "header",
+          "text": "Fundamental Processes of KBAI Cognative Systems",
+          "value": "fundamental-processes-of-kbai-cognative-systems",
+          "line": 45,
+          "column": 0,
+          "depth": 3
+        },
+        "deliberation": {
+          "type": "header",
+          "text": "Deliberation",
+          "value": "deliberation",
+          "line": 51,
+          "column": 0,
+          "depth": 4
+        },
+        "meta-cognition": {
+          "type": "header",
+          "text": "Meta-cognition",
+          "value": "meta-cognition",
+          "line": 61,
+          "column": 0,
+          "depth": 4
+        },
+        "reaction": {
+          "type": "header",
+          "text": "Reaction",
+          "value": "reaction",
+          "line": 67,
+          "column": 0,
+          "depth": 4
+        },
+        "kinds-of-kbai": {
+          "type": "header",
+          "text": "Kinds of KBAI",
+          "value": "kinds-of-kbai",
+          "line": 71,
+          "column": 0,
+          "depth": 3
+        },
+        "principles-of-kbai": {
+          "type": "header",
+          "text": "Principles of KBAI",
+          "value": "principles-of-kbai",
+          "line": 81,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [
+        "o53l052zabs198tpjahwkis",
+        "nn5xa88vksjcijal3jstdtu",
+        "avyt37mzocl9chcm1lzkkr1",
+        "28iqozdkcayt1odmw9n0p1p",
+        "gjvc2up0u0vcp4n47gvipxm",
+        "sn70ljist4zuj1t19187n8j",
+        "6duyqpt3l5mtrw5vbm9xjyq",
+        "8wokoxhwg6rew5wz6l9ldca",
+        "lfh9mgs9ybu24auo7xym3et",
+        "ponyrszv23oi02dnym819le"
+      ],
+      "parent": "ludzi9gs8nne0hesa50nnsp",
+      "data": {}
+    },
+    "ponyrszv23oi02dnym819le": {
+      "id": "ponyrszv23oi02dnym819le",
+      "title": "Visuospatial_Reasoning",
+      "desc": "",
+      "updated": 1703613402820,
+      "created": 1703613402820,
+      "custom": {},
+      "fname": "School.KBAI.Visuospatial_Reasoning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "2eaee42e6e75fb4a19926c573acc0c63",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "idio11m9du4cuty9q2ixvxv",
+        "8vdhvfcgzl49e72pk2fx4ue"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "8vdhvfcgzl49e72pk2fx4ue": {
+      "id": "8vdhvfcgzl49e72pk2fx4ue",
+      "title": "Visuospatial_Reasoning",
+      "desc": "",
+      "updated": 1703613704368,
+      "created": 1703613704368,
+      "custom": {},
+      "fname": "School.KBAI.Visuospatial_Reasoning.Visuospatial_Reasoning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "bdc87599d0ef1bfea17c8ba1f48985fc",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "ponyrszv23oi02dnym819le",
+      "data": {}
+    },
+    "idio11m9du4cuty9q2ixvxv": {
+      "id": "idio11m9du4cuty9q2ixvxv",
+      "title": "Constraint_Propagatio",
+      "desc": "",
+      "updated": 1711377228857,
+      "created": 1703613698105,
+      "custom": {},
+      "fname": "School.KBAI.Visuospatial_Reasoning.Constraint_Propagation",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "8d7efe28fe1d2dc5a1ac98b0d73961f0",
+      "links": [],
+      "anchors": {
+        "image-processing": {
+          "type": "header",
+          "text": "Image Processing",
+          "value": "image-processing",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "natural-language-understanding": {
+          "type": "header",
+          "text": "Natural Language Understanding",
+          "value": "natural-language-understanding",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "advanced-problems": {
+          "type": "header",
+          "text": "Advanced Problems",
+          "value": "advanced-problems",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "ponyrszv23oi02dnym819le",
+      "data": {}
+    },
+    "lfh9mgs9ybu24auo7xym3et": {
+      "id": "lfh9mgs9ybu24auo7xym3et",
+      "title": "Planning",
+      "desc": "",
+      "updated": 1703613285244,
+      "created": 1703613285244,
+      "custom": {},
+      "fname": "School.KBAI.Planning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "10cd5f829a9f7bcf8a0a0ea45e72f005",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "nbrk9rrcjtyhozkyko7s76y",
+        "6jtfufuao0lz9jxjfah7bbx"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "6jtfufuao0lz9jxjfah7bbx": {
+      "id": "6jtfufuao0lz9jxjfah7bbx",
+      "title": "Planning",
+      "desc": "",
+      "updated": 1703613510875,
+      "created": 1703613510875,
+      "custom": {},
+      "fname": "School.KBAI.Planning.Planning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "6adb571335e15df9232ca7b9dcda6291",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "lfh9mgs9ybu24auo7xym3et",
+      "data": {}
+    },
+    "nbrk9rrcjtyhozkyko7s76y": {
+      "id": "nbrk9rrcjtyhozkyko7s76y",
+      "title": "Logic",
+      "desc": "",
+      "updated": 1708640035321,
+      "created": 1703613503952,
+      "custom": {},
+      "fname": "School.KBAI.Planning.Logic",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "b567388514e4b7bf6751108ee83d427e",
+      "links": [],
+      "anchors": {
+        "formal-notation": {
+          "type": "header",
+          "text": "Formal Notation",
+          "value": "formal-notation",
+          "line": 19,
+          "column": 0,
+          "depth": 2
+        },
+        "conjunctions-disjunctions-negations-implications": {
+          "type": "header",
+          "text": "Conjunctions, Disjunctions, Negations, Implications",
+          "value": "conjunctions-disjunctions-negations-implications",
+          "line": 30,
+          "column": 0,
+          "depth": 2
+        },
+        "conjunction": {
+          "type": "header",
+          "text": "Conjunction",
+          "value": "conjunction",
+          "line": 32,
+          "column": 0,
+          "depth": 3
+        },
+        "disjunction": {
+          "type": "header",
+          "text": "Disjunction",
+          "value": "disjunction",
+          "line": 40,
+          "column": 0,
+          "depth": 3
+        },
+        "truth-tables": {
+          "type": "header",
+          "text": "Truth Tables",
+          "value": "truth-tables",
+          "line": 53,
+          "column": 0,
+          "depth": 2
+        },
+        "rules-of-inference": {
+          "type": "header",
+          "text": "Rules of Inference",
+          "value": "rules-of-inference",
+          "line": 69,
+          "column": 0,
+          "depth": 2
+        },
+        "modus-ponens": {
+          "type": "header",
+          "text": "Modus Ponens",
+          "value": "modus-ponens",
+          "line": 71,
+          "column": 0,
+          "depth": 3
+        },
+        "modus-tollens": {
+          "type": "header",
+          "text": "Modus Tollens",
+          "value": "modus-tollens",
+          "line": 79,
+          "column": 0,
+          "depth": 3
+        },
+        "resolution-theorem-proving": {
+          "type": "header",
+          "text": "Resolution Theorem Proving",
+          "value": "resolution-theorem-proving",
+          "line": 87,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "lfh9mgs9ybu24auo7xym3et",
+      "data": {}
+    },
+    "8wokoxhwg6rew5wz6l9ldca": {
+      "id": "8wokoxhwg6rew5wz6l9ldca",
+      "title": "Metacognition",
+      "desc": "",
+      "updated": 1703613338426,
+      "created": 1703613338426,
+      "custom": {},
+      "fname": "School.KBAI.Metacognition",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "4ff9e0b7470d8fd7b531367f1acf61e1",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "jdho1hbeisrwnsognqzlzlz",
+        "jxt30pqnmdsg89ocmpou025",
+        "2ekusukc81l3l2aituv3ikh"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "2ekusukc81l3l2aituv3ikh": {
+      "id": "2ekusukc81l3l2aituv3ikh",
+      "title": "Meta-Reasoning",
+      "desc": "",
+      "updated": 1711828815533,
+      "created": 1703613760486,
+      "custom": {},
+      "fname": "School.KBAI.Metacognition.Meta-Reasoning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "0ae2deff8ac46303f9f0a30a06fbabfc",
+      "links": [],
+      "anchors": {
+        "mistakes-in-knowledge-reasoning-and-learning": {
+          "type": "header",
+          "text": "Mistakes in Knowledge, Reasoning and Learning",
+          "value": "mistakes-in-knowledge-reasoning-and-learning",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "gaps-in-knowledge-and-reasoning": {
+          "type": "header",
+          "text": "Gaps in Knowledge and Reasoning",
+          "value": "gaps-in-knowledge-and-reasoning",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "streategy-selection-and-integration": {
+          "type": "header",
+          "text": "Streategy Selection and Integration",
+          "value": "streategy-selection-and-integration",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        },
+        "meta-cognition": {
+          "type": "header",
+          "text": "Meta-cognition",
+          "value": "meta-cognition",
+          "line": 20,
+          "column": 0,
+          "depth": 2
+        },
+        "goal-based-autonomy": {
+          "type": "header",
+          "text": "Goal Based Autonomy",
+          "value": "goal-based-autonomy",
+          "line": 37,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "8wokoxhwg6rew5wz6l9ldca",
+      "data": {}
+    },
+    "jxt30pqnmdsg89ocmpou025": {
+      "id": "jxt30pqnmdsg89ocmpou025",
+      "title": "Learning_by_Correcting_Mistakes",
+      "desc": "",
+      "updated": 1711827589228,
+      "created": 1703613752765,
+      "custom": {},
+      "fname": "School.KBAI.Metacognition.Learning_by_Correcting_Mistakes",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "161193470b0ba1568cdfc655fa8104fb",
+      "links": [],
+      "anchors": {
+        "explanation-based-learning-revisited": {
+          "type": "header",
+          "text": "Explanation-based Learning Revisited",
+          "value": "explanation-based-learning-revisited",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "isolating-mistakes": {
+          "type": "header",
+          "text": "Isolating Mistakes",
+          "value": "isolating-mistakes",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "explaining-mistakes": {
+          "type": "header",
+          "text": "Explaining Mistakes",
+          "value": "explaining-mistakes",
+          "line": 42,
+          "column": 0,
+          "depth": 2
+        },
+        "correcting-mistakes": {
+          "type": "header",
+          "text": "Correcting Mistakes",
+          "value": "correcting-mistakes",
+          "line": 50,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "8wokoxhwg6rew5wz6l9ldca",
+      "data": {}
+    },
+    "jdho1hbeisrwnsognqzlzlz": {
+      "id": "jdho1hbeisrwnsognqzlzlz",
+      "title": "Ethics_in_Artifical_Intelligence",
+      "desc": "",
+      "updated": 1711832990675,
+      "created": 1703613772078,
+      "custom": {},
+      "fname": "School.KBAI.Metacognition.Ethics_in_Artifical_Intelligence",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "a60a2e7b26025610a9689e448e86e02f",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "8wokoxhwg6rew5wz6l9ldca",
+      "data": {}
+    },
+    "6duyqpt3l5mtrw5vbm9xjyq": {
+      "id": "6duyqpt3l5mtrw5vbm9xjyq",
+      "title": "Learning",
+      "desc": "",
+      "updated": 1703613406634,
+      "created": 1703613406634,
+      "custom": {},
+      "fname": "School.KBAI.Learning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "4739524c564f001add70a0fe50cce135",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "kpedial1xjqppuxo2uojeu9",
+        "ioc9e7h6ud7p8sgt7akh09q",
+        "qe83f7nf8b2g6qjb6hqyc8m",
+        "25p8qmdgwcyhgibqvorq9uw"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "25p8qmdgwcyhgibqvorq9uw": {
+      "id": "25p8qmdgwcyhgibqvorq9uw",
+      "title": "Version_Spaces",
+      "desc": "",
+      "updated": 1711376378992,
+      "created": 1703613593218,
+      "custom": {},
+      "fname": "School.KBAI.Learning.Version_Spaces",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "e48c9703d212f9bfc268bf646cda9c02",
+      "links": [],
+      "anchors": {
+        "algorithm-for-version-spaces": {
+          "type": "header",
+          "text": "Algorithm for Version spaces",
+          "value": "algorithm-for-version-spaces",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "tree-based-representations": {
+          "type": "header",
+          "text": "Tree-Based Representations",
+          "value": "tree-based-representations",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "6duyqpt3l5mtrw5vbm9xjyq",
+      "data": {}
+    },
+    "qe83f7nf8b2g6qjb6hqyc8m": {
+      "id": "qe83f7nf8b2g6qjb6hqyc8m",
+      "title": "Learning_by_Recording_Cases",
+      "desc": "",
+      "updated": 1708549152852,
+      "created": 1703613570834,
+      "custom": {},
+      "fname": "School.KBAI.Learning.Learning_by_Recording_Cases",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "ff246e754eeec2e15ec8bdfe08750c4a",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "6duyqpt3l5mtrw5vbm9xjyq",
+      "data": {}
+    },
+    "ioc9e7h6ud7p8sgt7akh09q": {
+      "id": "ioc9e7h6ud7p8sgt7akh09q",
+      "title": "Incremental_Concept_Learning",
+      "desc": "",
+      "updated": 1708634855215,
+      "created": 1703613582216,
+      "custom": {},
+      "fname": "School.KBAI.Learning.Incremental_Concept_Learning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "ed49673e9111aa40f55949482d69a82f",
+      "links": [],
+      "anchors": {
+        "variabilization": {
+          "type": "header",
+          "text": "Variabilization",
+          "value": "variabilization",
+          "line": 19,
+          "column": 0,
+          "depth": 2
+        },
+        "specialization": {
+          "type": "header",
+          "text": "Specialization",
+          "value": "specialization",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "generalization": {
+          "type": "header",
+          "text": "Generalization",
+          "value": "generalization",
+          "line": 31,
+          "column": 0,
+          "depth": 2
+        },
+        "heuristics-for-specialization-and-generalization": {
+          "type": "header",
+          "text": "Heuristics for Specialization and Generalization",
+          "value": "heuristics-for-specialization-and-generalization",
+          "line": 38,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "6duyqpt3l5mtrw5vbm9xjyq",
+      "data": {}
+    },
+    "kpedial1xjqppuxo2uojeu9": {
+      "id": "kpedial1xjqppuxo2uojeu9",
+      "title": "Classification",
+      "desc": "",
+      "updated": 1708636659328,
+      "created": 1703613588550,
+      "custom": {},
+      "fname": "School.KBAI.Learning.Classification",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "4980aaecf20ec2f77fe605a44142c2c5",
+      "links": [],
+      "anchors": {
+        "concept-learning": {
+          "type": "header",
+          "text": "Concept Learning",
+          "value": "concept-learning",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "equivalent-classes": {
+          "type": "header",
+          "text": "Equivalent Classes",
+          "value": "equivalent-classes",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "concept-hierarchy": {
+          "type": "header",
+          "text": "Concept Hierarchy",
+          "value": "concept-hierarchy",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "axiomatic-concept": {
+          "type": "header",
+          "text": "Axiomatic Concept",
+          "value": "axiomatic-concept",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        },
+        "prototypical-concept": {
+          "type": "header",
+          "text": "Prototypical Concept",
+          "value": "prototypical-concept",
+          "line": 28,
+          "column": 0,
+          "depth": 2
+        },
+        "exemplar-concept": {
+          "type": "header",
+          "text": "Exemplar Concept",
+          "value": "exemplar-concept",
+          "line": 34,
+          "column": 0,
+          "depth": 2
+        },
+        "bottom-up-search": {
+          "type": "header",
+          "text": "Bottom-Up Search",
+          "value": "bottom-up-search",
+          "line": 40,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "6duyqpt3l5mtrw5vbm9xjyq",
+      "data": {}
+    },
+    "sn70ljist4zuj1t19187n8j": {
+      "id": "sn70ljist4zuj1t19187n8j",
+      "title": "Fundamentals",
+      "desc": "",
+      "updated": 1703613278769,
+      "created": 1703613278769,
+      "custom": {},
+      "fname": "School.KBAI.Fundamentals",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "0928bc62c62c9f1a2d4521dc935f53fc",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "a2oskojcyyqcssikr3vvl8w",
+        "lcjm4uuorgjgi7m0c4sod7x",
+        "yyq3j08w3chtq7tzfqj18do",
+        "ffienvkjn4o8tibpu1gjm1m",
+        "yy6bcpr73wn40y65uxxheam"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "yy6bcpr73wn40y65uxxheam": {
+      "id": "yy6bcpr73wn40y65uxxheam",
+      "title": "Semantic_Networks",
+      "desc": "",
+      "updated": 1703619150919,
+      "created": 1703613438702,
+      "custom": {},
+      "fname": "School.KBAI.Fundamentals.Semantic_Networks",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "ac89227222251f89adfb931a77319893",
+      "links": [],
+      "anchors": {
+        "what-is-a-knowledge-representation": {
+          "type": "header",
+          "text": "What is a Knowledge Representation?",
+          "value": "what-is-a-knowledge-representation",
+          "line": 9,
+          "column": 0,
+          "depth": 2
+        },
+        "structure-of-semantic-networks": {
+          "type": "header",
+          "text": "Structure of Semantic Networks",
+          "value": "structure-of-semantic-networks",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "represent-and-reason": {
+          "type": "header",
+          "text": "Represent and Reason",
+          "value": "represent-and-reason",
+          "line": 38,
+          "column": 0,
+          "depth": 2
+        },
+        "weights-w-represent-and-reason": {
+          "type": "header",
+          "text": "Weights w/ Represent and Reason",
+          "value": "weights-w-represent-and-reason",
+          "line": 43,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "sn70ljist4zuj1t19187n8j",
+      "data": {}
+    },
+    "ffienvkjn4o8tibpu1gjm1m": {
+      "id": "ffienvkjn4o8tibpu1gjm1m",
+      "title": "Production_Systems",
+      "desc": "",
+      "updated": 1704474268797,
+      "created": 1703613445723,
+      "custom": {},
+      "fname": "School.KBAI.Fundamentals.Production_Systems",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "b2291cb226704d0be1ab9a2a7ab3dda9",
+      "links": [],
+      "anchors": {
+        "cognative-architecture": {
+          "type": "header",
+          "text": "Cognative Architecture",
+          "value": "cognative-architecture",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "soar": {
+          "type": "header",
+          "text": "SOAR",
+          "value": "soar",
+          "line": 33,
+          "column": 0,
+          "depth": 3
+        },
+        "production-systems": {
+          "type": "header",
+          "text": "Production Systems",
+          "value": "production-systems",
+          "line": 47,
+          "column": 0,
+          "depth": 2
+        },
+        "action-selection": {
+          "type": "header",
+          "text": "Action Selection",
+          "value": "action-selection",
+          "line": 68,
+          "column": 0,
+          "depth": 2
+        },
+        "chunking": {
+          "type": "header",
+          "text": "Chunking",
+          "value": "chunking",
+          "line": 74,
+          "column": 0,
+          "depth": 2
+        },
+        "misc": {
+          "type": "header",
+          "text": "Misc",
+          "value": "misc",
+          "line": 79,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "sn70ljist4zuj1t19187n8j",
+      "data": {}
+    },
+    "yyq3j08w3chtq7tzfqj18do": {
+      "id": "yyq3j08w3chtq7tzfqj18do",
+      "title": "Problem_Reduction",
+      "desc": "",
+      "updated": 1703613474592,
+      "created": 1703613474592,
+      "custom": {},
+      "fname": "School.KBAI.Fundamentals.Problem_Reduction",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "03b3001d0a1538fd84c9aa1515612ba5",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "sn70ljist4zuj1t19187n8j",
+      "data": {}
+    },
+    "lcjm4uuorgjgi7m0c4sod7x": {
+      "id": "lcjm4uuorgjgi7m0c4sod7x",
+      "title": "Means-Ends_Analysis",
+      "desc": "",
+      "updated": 1703765802080,
+      "created": 1703613461173,
+      "custom": {},
+      "fname": "School.KBAI.Fundamentals.Means-Ends_Analysis",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "f865e430b252473a3ff1d5f03a823636",
+      "links": [],
+      "anchors": {
+        "state-spaces": {
+          "type": "header",
+          "text": "State Spaces",
+          "value": "state-spaces",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "means-ends-analysis": {
+          "type": "header",
+          "text": "Means-Ends Analysis",
+          "value": "means-ends-analysis",
+          "line": 15,
+          "column": 0,
+          "depth": 2
+        },
+        "problem-reduction": {
+          "type": "header",
+          "text": "Problem Reduction",
+          "value": "problem-reduction",
+          "line": 21,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "sn70ljist4zuj1t19187n8j",
+      "data": {}
+    },
+    "a2oskojcyyqcssikr3vvl8w": {
+      "id": "a2oskojcyyqcssikr3vvl8w",
+      "title": "Generate_and_Test",
+      "desc": "",
+      "updated": 1703620011930,
+      "created": 1703613452444,
+      "custom": {},
+      "fname": "School.KBAI.Fundamentals.Generate_and_Test",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "bcd31912feedbf1f2ff7776ecdb15a0d",
+      "links": [],
+      "anchors": {
+        "smart-generators": {
+          "type": "header",
+          "text": "Smart Generators",
+          "value": "smart-generators",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "smart-testers": {
+          "type": "header",
+          "text": "Smart Testers",
+          "value": "smart-testers",
+          "line": 22,
+          "column": 0,
+          "depth": 2
+        },
+        "generate-and-test-in-an-unconstrained-domain": {
+          "type": "header",
+          "text": "Generate and Test in an Unconstrained Domain",
+          "value": "generate-and-test-in-an-unconstrained-domain",
+          "line": 27,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "sn70ljist4zuj1t19187n8j",
+      "data": {}
+    },
+    "gjvc2up0u0vcp4n47gvipxm": {
+      "id": "gjvc2up0u0vcp4n47gvipxm",
+      "title": "Evaluation",
+      "desc": "",
+      "updated": 1703614582000,
+      "created": 1703614582000,
+      "custom": {},
+      "fname": "School.KBAI.Evaluation",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "7f7689f56a671cc84f24eebdd3d1fcdb",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "kuh6xvg02w01frx1wghhlow"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "kuh6xvg02w01frx1wghhlow": {
+      "id": "kuh6xvg02w01frx1wghhlow",
+      "title": "Ravens_Progressive_Matrices",
+      "desc": "",
+      "updated": 1703614693571,
+      "created": 1703614588365,
+      "custom": {},
+      "fname": "School.KBAI.Evaluation.Ravens_Progressive_Matrices",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "2423ed267dd3a0d4f3fa8c2136654cf5",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "gjvc2up0u0vcp4n47gvipxm",
+      "data": {}
+    },
+    "28iqozdkcayt1odmw9n0p1p": {
+      "id": "28iqozdkcayt1odmw9n0p1p",
+      "title": "Design_and_Creativity",
+      "desc": "",
+      "updated": 1703613352276,
+      "created": 1703613352276,
+      "custom": {},
+      "fname": "School.KBAI.Design_and_Creativity",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "231a1b26da29bee393e374c5ecfb3b6d",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "zzp9z9qvvdz1wy20g8t8trb",
+        "8fpe4evqusuxtkq8ah7i75y",
+        "fa2q2wej8bxroga3rgafw5b",
+        "cpmf8e335qc9vuzfl9pmpnj"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "cpmf8e335qc9vuzfl9pmpnj": {
+      "id": "cpmf8e335qc9vuzfl9pmpnj",
+      "title": "Diagnosis",
+      "desc": "",
+      "updated": 1711734621419,
+      "created": 1703613721725,
+      "custom": {},
+      "fname": "School.KBAI.Design_and_Creativity.Diagnosis",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "9429e20a4458bdd47efc666c288eaebd",
+      "links": [],
+      "anchors": {
+        "defining-doagnosis": {
+          "type": "header",
+          "text": "Defining Doagnosis",
+          "value": "defining-doagnosis",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "data-and-hypothesis-spaces": {
+          "type": "header",
+          "text": "Data and Hypothesis Spaces",
+          "value": "data-and-hypothesis-spaces",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "heuristic-classification": {
+          "type": "header",
+          "text": "Heuristic Classification",
+          "value": "heuristic-classification",
+          "line": 25,
+          "column": 0,
+          "depth": 3
+        },
+        "mapping-data-to-hypothesis": {
+          "type": "header",
+          "text": "Mapping Data to Hypothesis",
+          "value": "mapping-data-to-hypothesis",
+          "line": 30,
+          "column": 0,
+          "depth": 2
+        },
+        "difficulties": {
+          "type": "header",
+          "text": "Difficulties",
+          "value": "difficulties",
+          "line": 34,
+          "column": 0,
+          "depth": 3
+        },
+        "two-views-of-diagnosis": {
+          "type": "header",
+          "text": "Two Views of Diagnosis",
+          "value": "two-views-of-diagnosis",
+          "line": 42,
+          "column": 0,
+          "depth": 2
+        },
+        "classification": {
+          "type": "header",
+          "text": "Classification",
+          "value": "classification",
+          "line": 44,
+          "column": 0,
+          "depth": 3
+        },
+        "abduction": {
+          "type": "header",
+          "text": "Abduction",
+          "value": "abduction",
+          "line": 48,
+          "column": 0,
+          "depth": 3
+        },
+        "fundamental-forms-of-inference": {
+          "type": "header",
+          "text": "Fundamental Forms of Inference",
+          "value": "fundamental-forms-of-inference",
+          "line": 56,
+          "column": 0,
+          "depth": 3
+        },
+        "choosing-a-hypothesis": {
+          "type": "header",
+          "text": "Choosing a Hypothesis",
+          "value": "choosing-a-hypothesis",
+          "line": 63,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "28iqozdkcayt1odmw9n0p1p",
+      "data": {}
+    },
+    "fa2q2wej8bxroga3rgafw5b": {
+      "id": "fa2q2wej8bxroga3rgafw5b",
+      "title": "Design",
+      "desc": "",
+      "updated": 1711832379394,
+      "created": 1703613725219,
+      "custom": {},
+      "fname": "School.KBAI.Design_and_Creativity.Design",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "28a48e70802b3cb57dcaf5a090a39a49",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "28iqozdkcayt1odmw9n0p1p",
+      "data": {}
+    },
+    "8fpe4evqusuxtkq8ah7i75y": {
+      "id": "8fpe4evqusuxtkq8ah7i75y",
+      "title": "Creativity",
+      "desc": "",
+      "updated": 1711832765975,
+      "created": 1703613730050,
+      "custom": {},
+      "fname": "School.KBAI.Design_and_Creativity.Creativity",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "5faf025ae54afa6d84b075efa615491a",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "28iqozdkcayt1odmw9n0p1p",
+      "data": {}
+    },
+    "zzp9z9qvvdz1wy20g8t8trb": {
+      "id": "zzp9z9qvvdz1wy20g8t8trb",
+      "title": "Configuration",
+      "desc": "",
+      "updated": 1711732766935,
+      "created": 1703613717053,
+      "custom": {},
+      "fname": "School.KBAI.Design_and_Creativity.Configuration",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "1e010b6aa9215108c34b97ea1215f736",
+      "links": [],
+      "anchors": {
+        "design--configuration": {
+          "type": "header",
+          "text": "Design & Configuration",
+          "value": "design--configuration",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "configureation-process": {
+          "type": "header",
+          "text": "Configureation Process",
+          "value": "configureation-process",
+          "line": 19,
+          "column": 0,
+          "depth": 3
+        },
+        "plan-refinement": {
+          "type": "header",
+          "text": "Plan Refinement",
+          "value": "plan-refinement",
+          "line": 34,
+          "column": 0,
+          "depth": 2
+        },
+        "connection-to-earlier-topics": {
+          "type": "header",
+          "text": "Connection to Earlier Topics",
+          "value": "connection-to-earlier-topics",
+          "line": 36,
+          "column": 0,
+          "depth": 2
+        },
+        "classification": {
+          "type": "header",
+          "text": "Classification",
+          "value": "classification",
+          "line": 38,
+          "column": 0,
+          "depth": 3
+        },
+        "case-based-reasoning": {
+          "type": "header",
+          "text": "Case-Based Reasoning",
+          "value": "case-based-reasoning",
+          "line": 44,
+          "column": 0,
+          "depth": 3
+        },
+        "planning": {
+          "type": "header",
+          "text": "Planning",
+          "value": "planning",
+          "line": 49,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "28iqozdkcayt1odmw9n0p1p",
+      "data": {}
+    },
+    "avyt37mzocl9chcm1lzkkr1": {
+      "id": "avyt37mzocl9chcm1lzkkr1",
+      "title": "Common_Sense_Reasoning",
+      "desc": "",
+      "updated": 1703613315903,
+      "created": 1703613315903,
+      "custom": {},
+      "fname": "School.KBAI.Common_Sense_Reasoning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "b0c5cdea1fd1d100250708b20bc81510",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "aijwcajx57eoknbqk695ps6",
+        "7kyjy2ld1wb8ch6bjzi8pla",
+        "id927il4odjtwddzuzuvzw0",
+        "yh7g5awn8j0jfw2bmoovj5x"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "yh7g5awn8j0jfw2bmoovj5x": {
+      "id": "yh7g5awn8j0jfw2bmoovj5x",
+      "title": "Understanding",
+      "desc": "",
+      "updated": 1709653916004,
+      "created": 1703613536954,
+      "custom": {},
+      "fname": "School.KBAI.Common_Sense_Reasoning.Understanding",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "ea39d838728449652707641a1b3f0735",
+      "links": [],
+      "anchors": {
+        "thematic-role-systems": {
+          "type": "header",
+          "text": "Thematic Role Systems",
+          "value": "thematic-role-systems",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "analysis": {
+          "type": "header",
+          "text": "Analysis",
+          "value": "analysis",
+          "line": 12,
+          "column": 0,
+          "depth": 3
+        },
+        "lexical-analysis": {
+          "type": "header",
+          "text": "Lexical analysis",
+          "value": "lexical-analysis",
+          "line": 16,
+          "column": 0,
+          "depth": 4
+        },
+        "semantic-analysis": {
+          "type": "header",
+          "text": "Semantic analysis",
+          "value": "semantic-analysis",
+          "line": 23,
+          "column": 0,
+          "depth": 4
+        },
+        "leveraging-constraints": {
+          "type": "header",
+          "text": "Leveraging Constraints",
+          "value": "leveraging-constraints",
+          "line": 41,
+          "column": 0,
+          "depth": 2
+        },
+        "constraints": {
+          "type": "header",
+          "text": "Constraints",
+          "value": "constraints",
+          "line": 43,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "avyt37mzocl9chcm1lzkkr1",
+      "data": {}
+    },
+    "id927il4odjtwddzuzuvzw0": {
+      "id": "id927il4odjtwddzuzuvzw0",
+      "title": "Scripts",
+      "desc": "",
+      "updated": 1709745326333,
+      "created": 1703613548877,
+      "custom": {},
+      "fname": "School.KBAI.Common_Sense_Reasoning.Scripts",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "8add13b5cb5fbb0d18efa3aa7e18e837",
+      "links": [],
+      "anchors": {
+        "definition": {
+          "type": "header",
+          "text": "Definition",
+          "value": "definition",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "form-vs-content": {
+          "type": "header",
+          "text": "Form vs Content",
+          "value": "form-vs-content",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "generating-expectations": {
+          "type": "header",
+          "text": "Generating Expectations",
+          "value": "generating-expectations",
+          "line": 12,
+          "column": 0,
+          "depth": 2
+        },
+        "hierarchies-of-scripts": {
+          "type": "header",
+          "text": "Hierarchies of Scripts",
+          "value": "hierarchies-of-scripts",
+          "line": 14,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "avyt37mzocl9chcm1lzkkr1",
+      "data": {}
+    },
+    "7kyjy2ld1wb8ch6bjzi8pla": {
+      "id": "7kyjy2ld1wb8ch6bjzi8pla",
+      "title": "Frames",
+      "desc": "",
+      "updated": 1703613532328,
+      "created": 1703613532328,
+      "custom": {},
+      "fname": "School.KBAI.Common_Sense_Reasoning.Frames",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "abcbe57ed089c5f13f022f54a4846a65",
+      "links": [],
+      "anchors": {
+        "structure-of-frames": {
+          "type": "header",
+          "text": "Structure of Frames",
+          "value": "structure-of-frames",
+          "line": 17,
+          "column": 0,
+          "depth": 2
+        },
+        "properties-of-frames": {
+          "type": "header",
+          "text": "Properties of Frames",
+          "value": "properties-of-frames",
+          "line": 51,
+          "column": 0,
+          "depth": 2
+        },
+        "representations": {
+          "type": "header",
+          "text": "Representations",
+          "value": "representations",
+          "line": 77,
+          "column": 0,
+          "depth": 2
+        },
+        "story-understanding": {
+          "type": "header",
+          "text": "Story Understanding",
+          "value": "story-understanding",
+          "line": 86,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "avyt37mzocl9chcm1lzkkr1",
+      "data": {}
+    },
+    "aijwcajx57eoknbqk695ps6": {
+      "id": "aijwcajx57eoknbqk695ps6",
+      "title": "Common_Sense_Reasoning",
+      "desc": "",
+      "updated": 1709745257149,
+      "created": 1703613545092,
+      "custom": {},
+      "fname": "School.KBAI.Common_Sense_Reasoning.Common_Sense_Reasoning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "7b94b9096fed70b35b154da479b1ba36",
+      "links": [],
+      "anchors": {
+        "primitive-actions": {
+          "type": "header",
+          "text": "Primitive Actions",
+          "value": "primitive-actions",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "hierarchical-actions-and-sub-actions": {
+          "type": "header",
+          "text": "Hierarchical actions and sub-actions",
+          "value": "hierarchical-actions-and-sub-actions",
+          "line": 50,
+          "column": 0,
+          "depth": 2
+        },
+        "example": {
+          "type": "header",
+          "text": "Example",
+          "value": "example",
+          "line": 56,
+          "column": 0,
+          "depth": 3
+        },
+        "state-changes": {
+          "type": "header",
+          "text": "State changes",
+          "value": "state-changes",
+          "line": 80,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "avyt37mzocl9chcm1lzkkr1",
+      "data": {}
+    },
+    "nn5xa88vksjcijal3jstdtu": {
+      "id": "nn5xa88vksjcijal3jstdtu",
+      "title": "Analogical_Reasoning",
+      "desc": "",
+      "updated": 1703613893219,
+      "created": 1703613332508,
+      "custom": {},
+      "fname": "School.KBAI.Analogical_Reasoning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "a74600ea4ba793ab8edbe076c128effc",
+      "links": [],
+      "anchors": {},
+      "children": [
+        "b5bbim9a7bdjlqsvgx4hu9f",
+        "7qa6rcscrovtgymy0hh71zy",
+        "etzuuzm3oh8fr52so450qq4",
+        "hrex20y3niuvcd5ud84pblc"
+      ],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    },
+    "hrex20y3niuvcd5ud84pblc": {
+      "id": "hrex20y3niuvcd5ud84pblc",
+      "title": "Learning_by_Recording_Cases",
+      "desc": "",
+      "updated": 1703613617316,
+      "created": 1703613617316,
+      "custom": {},
+      "fname": "School.KBAI.Analogical_Reasoning.Learning_by_Recording_Cases",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "ed52c7b5c1f5e8e6bf030b312316f00f",
+      "links": [],
+      "anchors": {},
+      "children": [],
+      "parent": "nn5xa88vksjcijal3jstdtu",
+      "data": {}
+    },
+    "etzuuzm3oh8fr52so450qq4": {
+      "id": "etzuuzm3oh8fr52so450qq4",
+      "title": "Explanation_Based_Learning",
+      "desc": "",
+      "updated": 1710428902408,
+      "created": 1703613647548,
+      "custom": {},
+      "fname": "School.KBAI.Analogical_Reasoning.Explanation_Based_Learning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "fb3169822f8e61a63a3fcd0fd1a5e010",
+      "links": [],
+      "anchors": {
+        "concept-space": {
+          "type": "header",
+          "text": "Concept Space",
+          "value": "concept-space",
+          "line": 10,
+          "column": 0,
+          "depth": 2
+        },
+        "abstraction": {
+          "type": "header",
+          "text": "Abstraction",
+          "value": "abstraction",
+          "line": 34,
+          "column": 0,
+          "depth": 2
+        },
+        "analogical-transfer": {
+          "type": "header",
+          "text": "Analogical Transfer",
+          "value": "analogical-transfer",
+          "line": 44,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "nn5xa88vksjcijal3jstdtu",
+      "data": {}
+    },
+    "7qa6rcscrovtgymy0hh71zy": {
+      "id": "7qa6rcscrovtgymy0hh71zy",
+      "title": "Case_Based_Reasoning",
+      "desc": "",
+      "updated": 1708632815303,
+      "created": 1703613636290,
+      "custom": {},
+      "fname": "School.KBAI.Analogical_Reasoning.Case_Based_Reasoning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "b8684b08c5ed2ee24f0d40d70f7fb87e",
+      "links": [],
+      "anchors": {
+        "adaptation": {
+          "type": "header",
+          "text": "Adaptation",
+          "value": "adaptation",
+          "line": 22,
+          "column": 0,
+          "depth": 2
+        },
+        "model-based-method": {
+          "type": "header",
+          "text": "Model Based Method",
+          "value": "model-based-method",
+          "line": 26,
+          "column": 0,
+          "depth": 3
+        },
+        "recursive-retrieval": {
+          "type": "header",
+          "text": "Recursive retrieval",
+          "value": "recursive-retrieval",
+          "line": 32,
+          "column": 0,
+          "depth": 3
+        },
+        "heuristics--rules": {
+          "type": "header",
+          "text": "Heuristics / Rules",
+          "value": "heuristics--rules",
+          "line": 39,
+          "column": 0,
+          "depth": 3
+        },
+        "storage": {
+          "type": "header",
+          "text": "Storage",
+          "value": "storage",
+          "line": 46,
+          "column": 0,
+          "depth": 2
+        },
+        "indexing": {
+          "type": "header",
+          "text": "Indexing",
+          "value": "indexing",
+          "line": 48,
+          "column": 0,
+          "depth": 3
+        },
+        "discrimination-tree": {
+          "type": "header",
+          "text": "Discrimination Tree",
+          "value": "discrimination-tree",
+          "line": 53,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "nn5xa88vksjcijal3jstdtu",
+      "data": {}
+    },
+    "b5bbim9a7bdjlqsvgx4hu9f": {
+      "id": "b5bbim9a7bdjlqsvgx4hu9f",
+      "title": "Analogical_Reasoning",
+      "desc": "",
+      "updated": 1711574338193,
+      "created": 1703613659097,
+      "custom": {},
+      "fname": "School.KBAI.Analogical_Reasoning.Analogical_Reasoning",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "1e791c5c401df5aa3b3af84372f69c90",
+      "links": [],
+      "anchors": {
+        "cross-domain-analogy": {
+          "type": "header",
+          "text": "Cross Domain Analogy",
+          "value": "cross-domain-analogy",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        },
+        "similarity": {
+          "type": "header",
+          "text": "Similarity",
+          "value": "similarity",
+          "line": 15,
+          "column": 0,
+          "depth": 3
+        },
+        "phases": {
+          "type": "header",
+          "text": "Phases",
+          "value": "phases",
+          "line": 26,
+          "column": 0,
+          "depth": 2
+        },
+        "retrieval": {
+          "type": "header",
+          "text": "Retrieval",
+          "value": "retrieval",
+          "line": 30,
+          "column": 0,
+          "depth": 3
+        },
+        "mapping": {
+          "type": "header",
+          "text": "Mapping",
+          "value": "mapping",
+          "line": 38,
+          "column": 0,
+          "depth": 3
+        },
+        "transfer": {
+          "type": "header",
+          "text": "Transfer",
+          "value": "transfer",
+          "line": 48,
+          "column": 0,
+          "depth": 3
+        },
+        "evaluation": {
+          "type": "header",
+          "text": "Evaluation",
+          "value": "evaluation",
+          "line": 64,
+          "column": 0,
+          "depth": 3
+        },
+        "storage": {
+          "type": "header",
+          "text": "Storage",
+          "value": "storage",
+          "line": 68,
+          "column": 0,
+          "depth": 3
+        },
+        "compound-analogy": {
+          "type": "header",
+          "text": "Compound Analogy",
+          "value": "compound-analogy",
+          "line": 72,
+          "column": 0,
+          "depth": 2
+        },
+        "issues-w-analogical-reasoning": {
+          "type": "header",
+          "text": "Issues w/ Analogical Reasoning",
+          "value": "issues-w-analogical-reasoning",
+          "line": 76,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [],
+      "parent": "nn5xa88vksjcijal3jstdtu",
+      "data": {}
+    },
+    "o53l052zabs198tpjahwkis": {
+      "id": "o53l052zabs198tpjahwkis",
+      "title": "Advanced_Topics",
+      "desc": "",
+      "updated": 1711832142618,
+      "created": 1711828849062,
+      "custom": {},
+      "fname": "School.KBAI.Advanced_Topics",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "56820233eb718a7baae0b9de0d30e720",
+      "links": [],
+      "anchors": {
+        "visuospatial-reasoning": {
+          "type": "header",
+          "text": "Visuospatial Reasoning",
+          "value": "visuospatial-reasoning",
+          "line": 8,
+          "column": 0,
+          "depth": 2
+        },
+        "analogical-representation": {
+          "type": "header",
+          "text": "Analogical Representation",
+          "value": "analogical-representation",
+          "line": 18,
+          "column": 0,
+          "depth": 2
+        },
+        "systems-thinking": {
+          "type": "header",
+          "text": "Systems Thinking",
+          "value": "systems-thinking",
+          "line": 25,
+          "column": 0,
+          "depth": 2
+        },
+        "structure-behavior-function": {
+          "type": "header",
+          "text": "Structure-Behavior-Function",
+          "value": "structure-behavior-function",
+          "line": 29,
+          "column": 0,
+          "depth": 3
+        }
+      },
+      "children": [],
+      "parent": "xgs2jqf5uqbaazklxte11ga",
+      "data": {}
+    }
+  },
+  "domains": [
+    {
+      "id": "tnnw3egk8r06crz3yy17h9s",
+      "title": "Root",
+      "desc": "",
+      "updated": 1703610625261,
+      "created": 1703610625261,
+      "custom": {
+        "nav_order": 0,
+        "permalink": "/"
+      },
+      "fname": "root",
+      "type": "note",
+      "vault": {
+        "fsPath": ".",
+        "selfContained": true,
+        "name": "notes"
+      },
+      "contentHash": "e73e27f3d623ae8b7915aa670b746db2",
+      "links": [],
+      "anchors": {
+        "welcome-to-dendron": {
+          "type": "header",
+          "text": "Welcome to Dendron",
+          "value": "welcome-to-dendron",
+          "line": 7,
+          "column": 0,
+          "depth": 1
+        },
+        "lookup": {
+          "type": "header",
+          "text": "Lookup",
+          "value": "lookup",
+          "line": 11,
+          "column": 0,
+          "depth": 2
+        }
+      },
+      "children": [
+        "ludzi9gs8nne0hesa50nnsp"
+      ],
+      "parent": null,
+      "data": {},
+      "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.\n\n## Lookup\n\nThis section contains useful links to related resources.\n\n- [Getting Started Guide](https://link.dendron.so/6b25)\n- [Discord](https://link.dendron.so/6b23)\n- [Home Page](https://wiki.dendron.so/)\n- [Github](https://link.dendron.so/6b24)\n- [Developer Docs](https://docs.dendron.so/)"
+    }
+  ],
+  "noteIndex": {
+    "id": "tnnw3egk8r06crz3yy17h9s",
+    "title": "Root",
+    "desc": "",
+    "updated": 1703610625261,
+    "created": 1703610625261,
+    "custom": {
+      "nav_order": 0,
+      "permalink": "/"
+    },
+    "fname": "root",
+    "type": "note",
+    "vault": {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "notes"
+    },
+    "contentHash": "e73e27f3d623ae8b7915aa670b746db2",
+    "links": [],
+    "anchors": {
+      "welcome-to-dendron": {
+        "type": "header",
+        "text": "Welcome to Dendron",
+        "value": "welcome-to-dendron",
+        "line": 7,
+        "column": 0,
+        "depth": 1
+      },
+      "lookup": {
+        "type": "header",
+        "text": "Lookup",
+        "value": "lookup",
+        "line": 11,
+        "column": 0,
+        "depth": 2
+      }
+    },
+    "children": [
+      "ludzi9gs8nne0hesa50nnsp"
+    ],
+    "parent": null,
+    "data": {},
+    "body": "# Welcome to Dendron\n\nThis is the root of your dendron vault. If you decide to publish your entire vault, this will be your landing page. You are free to customize any part of this page except the frontmatter on top.\n\n## Lookup\n\nThis section contains useful links to related resources.\n\n- [Getting Started Guide](https://link.dendron.so/6b25)\n- [Discord](https://link.dendron.so/6b23)\n- [Home Page](https://wiki.dendron.so/)\n- [Github](https://link.dendron.so/6b24)\n- [Developer Docs](https://docs.dendron.so/)"
+  },
+  "vaults": [
+    {
+      "fsPath": ".",
+      "selfContained": true,
+      "name": "notes"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+<h1 id="production_systems">Production_Systems<a aria-hidden="true" class="anchor-heading icon-link" href="#production_systems"></a></h1>
+<h2 id="cognative-architecture">Cognative Architecture<a aria-hidden="true" class="anchor-heading icon-link" href="#cognative-architecture"></a></h2>
+<ul>
+<li>A cognative agent is a function <code>f</code> that maps a perceptual history <code>P*</code> to an action <code>A</code>.</li>
+<li>Percepts -> Actions</li>
+<li>The <code>*</code> stands for "history"</li>
+</ul>
+<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>f</mi><mo>:</mo><msup><mi>P</mi><mo>∗</mo></msup><mo>→</mo><mi>A</mi></mrow><annotation encoding="application/x-tex">f: P^* \rightarrow A</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.10764em;">f</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">:</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.7387em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7387em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">∗</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">→</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal">A</span></span></span></span></span></div>
+<p>Assumptions of Cognative Architectures:</p>
+<ul>
+<li>Goal-oriented</li>
+<li>Rich, complex environments</li>
+<li>Significant knowledge</li>
+<li>Represented at a level of abstraction, symbols</li>
+<li>Respond flexibly to a changing environment</li>
+<li>Learn from their experiences</li>
+</ul>
+<div class="math math-display"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mtext>Architecture</mtext><mo>+</mo><mtext>Content</mtext><mo>=</mo><mtext>Behavior</mtext></mrow><annotation encoding="application/x-tex">\text{Architecture} + \text{Content} = \text{Behavior}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7778em;vertical-align:-0.0833em;"></span><span class="mord text"><span class="mord">Architecture</span></span><span class="mspace" style="margin-right:0.2222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord text"><span class="mord">Content</span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord text"><span class="mord">Behavior</span></span></span></span></span></span></div>
+<p>If architecture is fixed, then we only need to change the knowedge content of the agent to achieve different behaviors.</p>
+<h3 id="soar">SOAR<a aria-hidden="true" class="anchor-heading icon-link" href="#soar"></a></h3>
+<p><img src="/./assets/SOAR.png" alt="SOAR"></p>
+<p>Consists of a <strong>long term memory</strong> portion</p>
+<ul>
+<li>Procedural knowledge (how to pour water into a container)</li>
+<li>Semantic knowledge (concepts and models of the environment, model of how a plane flies in the air)</li>
+<li>Episodic knowledge (events, think what was for dinner yesterday)</li>
+</ul>
+<p>and <strong>short term memory</strong></p>
+<ul>
+<li>Working memory</li>
+</ul>
+<h2 id="production-systems">Production Systems<a aria-hidden="true" class="anchor-heading icon-link" href="#production-systems"></a></h2>
+<p>Levels of Abstraction:</p>
+<ul>
+<li>
+<p><strong>High</strong> - Task / Knowledge Level</p>
+</li>
+<li>
+<p><strong>Mid</strong> - Algorithm / Symbol Level</p>
+</li>
+<li>
+<p><strong>Low</strong> - Hardware / Implementation Level</p>
+</li>
+<li>
+<p>Low level provides architecture for higher levels up ladder</p>
+</li>
+<li>
+<p>High level provides content for lower levels down ladder</p>
+</li>
+</ul>
+<p>Working Memory Cycle</p>
+<ul>
+<li>Working memory is the state of the system</li>
+<li>Long term memory can consist of "production rules"</li>
+<li>Based on long-term memory some rules get activated</li>
+<li>Rules which are activated consequences get established</li>
+<li>Consequences that are established mutate working memory</li>
+</ul>
+<p>If SOAR reaches a state that it cannot determine an action for, it will envoke episodic knowledge to try and learn a new behavior</p>
+<h2 id="action-selection">Action Selection<a aria-hidden="true" class="anchor-heading icon-link" href="#action-selection"></a></h2>
+<p>Mapping percepts in the world into actions</p>
+<ul>
+<li>Percepts from the world into a pitch selection</li>
+</ul>
+<h2 id="chunking">Chunking<a aria-hidden="true" class="anchor-heading icon-link" href="#chunking"></a></h2>
+<ul>
+<li>A <strong>learning technique</strong> that SOAR uses to overcome impasses</li>
+<li>Uses episodic memory to find an event in the past that is related to current percepts and leverages the previous event into a new rule</li>
+</ul>
+<h2 id="misc">Misc<a aria-hidden="true" class="anchor-heading icon-link" href="#misc"></a></h2>
+<p>Reasoning first, then work backwards to learning</p>

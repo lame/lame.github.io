@@ -1,0 +1,429 @@
+{
+  "roots": [
+    {
+      "key": "ludzi9gs8nne0hesa50nnsp",
+      "title": "School",
+      "icon": "plusOutlined",
+      "hasTitleNumberOutlined": false,
+      "vaultName": "notes",
+      "children": [
+        {
+          "key": "xgs2jqf5uqbaazklxte11ga",
+          "title": "KBAI",
+          "icon": null,
+          "hasTitleNumberOutlined": false,
+          "vaultName": "notes",
+          "children": [
+            {
+              "key": "o53l052zabs198tpjahwkis",
+              "title": "Advanced_Topics",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": []
+            },
+            {
+              "key": "nn5xa88vksjcijal3jstdtu",
+              "title": "Analogical_Reasoning",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "b5bbim9a7bdjlqsvgx4hu9f",
+                  "title": "Analogical_Reasoning",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "7qa6rcscrovtgymy0hh71zy",
+                  "title": "Case_Based_Reasoning",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "etzuuzm3oh8fr52so450qq4",
+                  "title": "Explanation_Based_Learning",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "hrex20y3niuvcd5ud84pblc",
+                  "title": "Learning_by_Recording_Cases",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "avyt37mzocl9chcm1lzkkr1",
+              "title": "Common_Sense_Reasoning",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "aijwcajx57eoknbqk695ps6",
+                  "title": "Common_Sense_Reasoning",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "7kyjy2ld1wb8ch6bjzi8pla",
+                  "title": "Frames",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "id927il4odjtwddzuzuvzw0",
+                  "title": "Scripts",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "yh7g5awn8j0jfw2bmoovj5x",
+                  "title": "Understanding",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "28iqozdkcayt1odmw9n0p1p",
+              "title": "Design_and_Creativity",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "zzp9z9qvvdz1wy20g8t8trb",
+                  "title": "Configuration",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "8fpe4evqusuxtkq8ah7i75y",
+                  "title": "Creativity",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "fa2q2wej8bxroga3rgafw5b",
+                  "title": "Design",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "cpmf8e335qc9vuzfl9pmpnj",
+                  "title": "Diagnosis",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "gjvc2up0u0vcp4n47gvipxm",
+              "title": "Evaluation",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "kuh6xvg02w01frx1wghhlow",
+                  "title": "Ravens_Progressive_Matrices",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "sn70ljist4zuj1t19187n8j",
+              "title": "Fundamentals",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "a2oskojcyyqcssikr3vvl8w",
+                  "title": "Generate_and_Test",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "lcjm4uuorgjgi7m0c4sod7x",
+                  "title": "Means-Ends_Analysis",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "yyq3j08w3chtq7tzfqj18do",
+                  "title": "Problem_Reduction",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "ffienvkjn4o8tibpu1gjm1m",
+                  "title": "Production_Systems",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "yy6bcpr73wn40y65uxxheam",
+                  "title": "Semantic_Networks",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "6duyqpt3l5mtrw5vbm9xjyq",
+              "title": "Learning",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "kpedial1xjqppuxo2uojeu9",
+                  "title": "Classification",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "ioc9e7h6ud7p8sgt7akh09q",
+                  "title": "Incremental_Concept_Learning",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "qe83f7nf8b2g6qjb6hqyc8m",
+                  "title": "Learning_by_Recording_Cases",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "25p8qmdgwcyhgibqvorq9uw",
+                  "title": "Version_Spaces",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "8wokoxhwg6rew5wz6l9ldca",
+              "title": "Metacognition",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "jdho1hbeisrwnsognqzlzlz",
+                  "title": "Ethics_in_Artifical_Intelligence",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "jxt30pqnmdsg89ocmpou025",
+                  "title": "Learning_by_Correcting_Mistakes",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "2ekusukc81l3l2aituv3ikh",
+                  "title": "Meta-Reasoning",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "lfh9mgs9ybu24auo7xym3et",
+              "title": "Planning",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "nbrk9rrcjtyhozkyko7s76y",
+                  "title": "Logic",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "6jtfufuao0lz9jxjfah7bbx",
+                  "title": "Planning",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "key": "ponyrszv23oi02dnym819le",
+              "title": "Visuospatial_Reasoning",
+              "icon": null,
+              "hasTitleNumberOutlined": false,
+              "vaultName": "notes",
+              "children": [
+                {
+                  "key": "idio11m9du4cuty9q2ixvxv",
+                  "title": "Constraint_Propagatio",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                },
+                {
+                  "key": "8vdhvfcgzl49e72pk2fx4ue",
+                  "title": "Visuospatial_Reasoning",
+                  "icon": null,
+                  "hasTitleNumberOutlined": false,
+                  "vaultName": "notes",
+                  "children": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "child2parent": {
+    "ludzi9gs8nne0hesa50nnsp": null,
+    "xgs2jqf5uqbaazklxte11ga": "ludzi9gs8nne0hesa50nnsp",
+    "o53l052zabs198tpjahwkis": "xgs2jqf5uqbaazklxte11ga",
+    "nn5xa88vksjcijal3jstdtu": "xgs2jqf5uqbaazklxte11ga",
+    "b5bbim9a7bdjlqsvgx4hu9f": "nn5xa88vksjcijal3jstdtu",
+    "7qa6rcscrovtgymy0hh71zy": "nn5xa88vksjcijal3jstdtu",
+    "etzuuzm3oh8fr52so450qq4": "nn5xa88vksjcijal3jstdtu",
+    "hrex20y3niuvcd5ud84pblc": "nn5xa88vksjcijal3jstdtu",
+    "avyt37mzocl9chcm1lzkkr1": "xgs2jqf5uqbaazklxte11ga",
+    "aijwcajx57eoknbqk695ps6": "avyt37mzocl9chcm1lzkkr1",
+    "7kyjy2ld1wb8ch6bjzi8pla": "avyt37mzocl9chcm1lzkkr1",
+    "id927il4odjtwddzuzuvzw0": "avyt37mzocl9chcm1lzkkr1",
+    "yh7g5awn8j0jfw2bmoovj5x": "avyt37mzocl9chcm1lzkkr1",
+    "28iqozdkcayt1odmw9n0p1p": "xgs2jqf5uqbaazklxte11ga",
+    "zzp9z9qvvdz1wy20g8t8trb": "28iqozdkcayt1odmw9n0p1p",
+    "8fpe4evqusuxtkq8ah7i75y": "28iqozdkcayt1odmw9n0p1p",
+    "fa2q2wej8bxroga3rgafw5b": "28iqozdkcayt1odmw9n0p1p",
+    "cpmf8e335qc9vuzfl9pmpnj": "28iqozdkcayt1odmw9n0p1p",
+    "gjvc2up0u0vcp4n47gvipxm": "xgs2jqf5uqbaazklxte11ga",
+    "kuh6xvg02w01frx1wghhlow": "gjvc2up0u0vcp4n47gvipxm",
+    "sn70ljist4zuj1t19187n8j": "xgs2jqf5uqbaazklxte11ga",
+    "a2oskojcyyqcssikr3vvl8w": "sn70ljist4zuj1t19187n8j",
+    "lcjm4uuorgjgi7m0c4sod7x": "sn70ljist4zuj1t19187n8j",
+    "yyq3j08w3chtq7tzfqj18do": "sn70ljist4zuj1t19187n8j",
+    "ffienvkjn4o8tibpu1gjm1m": "sn70ljist4zuj1t19187n8j",
+    "yy6bcpr73wn40y65uxxheam": "sn70ljist4zuj1t19187n8j",
+    "6duyqpt3l5mtrw5vbm9xjyq": "xgs2jqf5uqbaazklxte11ga",
+    "kpedial1xjqppuxo2uojeu9": "6duyqpt3l5mtrw5vbm9xjyq",
+    "ioc9e7h6ud7p8sgt7akh09q": "6duyqpt3l5mtrw5vbm9xjyq",
+    "qe83f7nf8b2g6qjb6hqyc8m": "6duyqpt3l5mtrw5vbm9xjyq",
+    "25p8qmdgwcyhgibqvorq9uw": "6duyqpt3l5mtrw5vbm9xjyq",
+    "8wokoxhwg6rew5wz6l9ldca": "xgs2jqf5uqbaazklxte11ga",
+    "jdho1hbeisrwnsognqzlzlz": "8wokoxhwg6rew5wz6l9ldca",
+    "jxt30pqnmdsg89ocmpou025": "8wokoxhwg6rew5wz6l9ldca",
+    "2ekusukc81l3l2aituv3ikh": "8wokoxhwg6rew5wz6l9ldca",
+    "lfh9mgs9ybu24auo7xym3et": "xgs2jqf5uqbaazklxte11ga",
+    "nbrk9rrcjtyhozkyko7s76y": "lfh9mgs9ybu24auo7xym3et",
+    "6jtfufuao0lz9jxjfah7bbx": "lfh9mgs9ybu24auo7xym3et",
+    "ponyrszv23oi02dnym819le": "xgs2jqf5uqbaazklxte11ga",
+    "idio11m9du4cuty9q2ixvxv": "ponyrszv23oi02dnym819le",
+    "8vdhvfcgzl49e72pk2fx4ue": "ponyrszv23oi02dnym819le"
+  },
+  "notesLabelById": {
+    "ludzi9gs8nne0hesa50nnsp": "School",
+    "xgs2jqf5uqbaazklxte11ga": "KBAI",
+    "o53l052zabs198tpjahwkis": "Advanced_Topics",
+    "nn5xa88vksjcijal3jstdtu": "Analogical_Reasoning",
+    "b5bbim9a7bdjlqsvgx4hu9f": "Analogical_Reasoning",
+    "7qa6rcscrovtgymy0hh71zy": "Case_Based_Reasoning",
+    "etzuuzm3oh8fr52so450qq4": "Explanation_Based_Learning",
+    "hrex20y3niuvcd5ud84pblc": "Learning_by_Recording_Cases",
+    "avyt37mzocl9chcm1lzkkr1": "Common_Sense_Reasoning",
+    "aijwcajx57eoknbqk695ps6": "Common_Sense_Reasoning",
+    "7kyjy2ld1wb8ch6bjzi8pla": "Frames",
+    "id927il4odjtwddzuzuvzw0": "Scripts",
+    "yh7g5awn8j0jfw2bmoovj5x": "Understanding",
+    "28iqozdkcayt1odmw9n0p1p": "Design_and_Creativity",
+    "zzp9z9qvvdz1wy20g8t8trb": "Configuration",
+    "8fpe4evqusuxtkq8ah7i75y": "Creativity",
+    "fa2q2wej8bxroga3rgafw5b": "Design",
+    "cpmf8e335qc9vuzfl9pmpnj": "Diagnosis",
+    "gjvc2up0u0vcp4n47gvipxm": "Evaluation",
+    "kuh6xvg02w01frx1wghhlow": "Ravens_Progressive_Matrices",
+    "sn70ljist4zuj1t19187n8j": "Fundamentals",
+    "a2oskojcyyqcssikr3vvl8w": "Generate_and_Test",
+    "lcjm4uuorgjgi7m0c4sod7x": "Means-Ends_Analysis",
+    "yyq3j08w3chtq7tzfqj18do": "Problem_Reduction",
+    "ffienvkjn4o8tibpu1gjm1m": "Production_Systems",
+    "yy6bcpr73wn40y65uxxheam": "Semantic_Networks",
+    "6duyqpt3l5mtrw5vbm9xjyq": "Learning",
+    "kpedial1xjqppuxo2uojeu9": "Classification",
+    "ioc9e7h6ud7p8sgt7akh09q": "Incremental_Concept_Learning",
+    "qe83f7nf8b2g6qjb6hqyc8m": "Learning_by_Recording_Cases",
+    "25p8qmdgwcyhgibqvorq9uw": "Version_Spaces",
+    "8wokoxhwg6rew5wz6l9ldca": "Metacognition",
+    "jdho1hbeisrwnsognqzlzlz": "Ethics_in_Artifical_Intelligence",
+    "jxt30pqnmdsg89ocmpou025": "Learning_by_Correcting_Mistakes",
+    "2ekusukc81l3l2aituv3ikh": "Meta-Reasoning",
+    "lfh9mgs9ybu24auo7xym3et": "Planning",
+    "nbrk9rrcjtyhozkyko7s76y": "Logic",
+    "6jtfufuao0lz9jxjfah7bbx": "Planning",
+    "ponyrszv23oi02dnym819le": "Visuospatial_Reasoning",
+    "idio11m9du4cuty9q2ixvxv": "Constraint_Propagatio",
+    "8vdhvfcgzl49e72pk2fx4ue": "Visuospatial_Reasoning"
+  }
+}
