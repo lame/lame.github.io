@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "@dendronhq/dendron-cli": "^0.122.0",
+    "libnpx": "^10.2.4",
     "npx": "^10.2.2"
   },
   "description": ""

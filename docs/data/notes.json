@@ -11,8 +11,8 @@
       "title": "This page has not yet sprouted",
       "schemaStub": false,
       "type": "note",
-      "updated": 1712017294304,
-      "created": 1712017294305,
+      "updated": 1712023738458,
+      "created": 1712023738458,
       "desc": "",
       "links": [],
       "anchors": {},
@@ -58,12 +58,12 @@
         }
       },
       "children": [
-        "ludzi9gs8nne0hesa50nnsp"
+        "yup9s9fl4blrsekzjxvc3ev"
       ],
       "parent": null,
       "data": {}
     },
-    "ludzi9gs8nne0hesa50nnsp": {
+    "yup9s9fl4blrsekzjxvc3ev": {
       "fname": "School",
       "stub": true,
       "vault": {
@@ -73,9 +73,9 @@
       },
       "schemaStub": false,
       "type": "note",
-      "updated": 1712017293762,
-      "created": 1712017293762,
-      "id": "ludzi9gs8nne0hesa50nnsp",
+      "updated": 1712023737902,
+      "created": 1712023737902,
+      "id": "yup9s9fl4blrsekzjxvc3ev",
       "desc": "",
       "links": [],
       "anchors": {},
@@ -196,7 +196,7 @@
         "lfh9mgs9ybu24auo7xym3et",
         "ponyrszv23oi02dnym819le"
       ],
-      "parent": "ludzi9gs8nne0hesa50nnsp",
+      "parent": "yup9s9fl4blrsekzjxvc3ev",
       "data": {}
     },
     "ponyrszv23oi02dnym819le": {
@@ -1989,7 +1989,7 @@
         }
       },
       "children": [
-        "ludzi9gs8nne0hesa50nnsp"
+        "yup9s9fl4blrsekzjxvc3ev"
       ],
       "parent": null,
       "data": {},
@@ -2034,7 +2034,7 @@
       }
     },
     "children": [
-      "ludzi9gs8nne0hesa50nnsp"
+      "yup9s9fl4blrsekzjxvc3ev"
     ],
     "parent": null,
     "data": {},
