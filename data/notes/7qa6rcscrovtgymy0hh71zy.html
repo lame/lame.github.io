@@ -1,0 +1,38 @@
+<h1 id="case_based_reasoning">Case_Based_Reasoning<a aria-hidden="true" class="anchor-heading icon-link" href="#case_based_reasoning"></a></h1>
+<p>Process of case-based reasoning:</p>
+<p>1) Retrieval: think knn for retrieving a recorded case
+2) Adaptation: Adapt the prior solution to fit the current problem
+3) Evaluation: How well will the adapted solution address the current problem
+4) Storage: Store new case back into case-based reasoning repository</p>
+<p>Assumptions:</p>
+<ul>
+<li>Patterns exist in the world</li>
+<li>Similar problems have similar solutions</li>
+</ul>
+<p>Failed cases are useful to store as well</p>
+<h2 id="adaptation">Adaptation<a aria-hidden="true" class="anchor-heading icon-link" href="#adaptation"></a></h2>
+<p>problem: Get from point A to point C</p>
+<h3 id="model-based-method">Model Based Method<a aria-hidden="true" class="anchor-heading icon-link" href="#model-based-method"></a></h3>
+<p>1) Retrieval finds a route from A to B
+2) Adaptation continues from B to C using a model of the streets
+3) Evaluation shows that A to C is satistied</p>
+<h3 id="recursive-retrieval">Recursive retrieval<a aria-hidden="true" class="anchor-heading icon-link" href="#recursive-retrieval"></a></h3>
+<p>1) No route from A to C
+2) Retrieve route from A to B (partial solution)
+3) Make new problem: Find route from B to C
+4) Retrieve route from B to C</p>
+<h3 id="heuristics--rules">Heuristics / Rules<a aria-hidden="true" class="anchor-heading icon-link" href="#heuristics--rules"></a></h3>
+<p>problem: Get from point C to point A</p>
+<p>1) Retrieve route from A to C
+2) Reverse route to C to A - This may not work (think 1-way streets)</p>
+<h2 id="storage">Storage<a aria-hidden="true" class="anchor-heading icon-link" href="#storage"></a></h2>
+<h3 id="indexing">Indexing<a aria-hidden="true" class="anchor-heading icon-link" href="#indexing"></a></h3>
+<ul>
+<li>route beginning x, y coordinates can be index key</li>
+<li>Additionally, things like speed, scenic, etc can be added to make a richer index</li>
+</ul>
+<h3 id="discrimination-tree">Discrimination Tree<a aria-hidden="true" class="anchor-heading icon-link" href="#discrimination-tree"></a></h3>
+<p>A binary search tree of yes/no answers. Every time that a single node has multiple
+branches pointing to it a new y/n question is created to split them.</p>
+<p>Doesn't have to be a binary tree, however each leaf has to have only one branch to it.</p>
+<p><img src="/./assets/discrimination_tree.png" alt="discrimination tree diagram"></p>

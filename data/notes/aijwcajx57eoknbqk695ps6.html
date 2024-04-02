@@ -1,0 +1,57 @@
+<h1 id="common_sense_reasoning">Common_Sense_Reasoning<a aria-hidden="true" class="anchor-heading icon-link" href="#common_sense_reasoning"></a></h1>
+<h2 id="primitive-actions">Primitive Actions<a aria-hidden="true" class="anchor-heading icon-link" href="#primitive-actions"></a></h2>
+<ul>
+<li>Move-body-part</li>
+<li>Move-object</li>
+<li>Expel</li>
+<li>Ingest</li>
+<li>Propel</li>
+<li>Speak</li>
+<li>See</li>
+<li>Hear</li>
+<li>Smell</li>
+<li>Feel</li>
+<li>Move-possession</li>
+<li>Move-concept (idea to go somewhere for instance)</li>
+<li>Think-about</li>
+<li>Conclude</li>
+</ul>
+<p>Primitives create an ontology of the world</p>
+<p>Verbs can be replaced with primitives:</p>
+<ul>
+<li>shot -> propelled a bullet</li>
+<li>fertalized -> spread fertilizer</li>
+<li>decided -> conclude</li>
+</ul>
+<p>Each primitive should have an associated frame:</p>
+<pre class="language-text"><code class="language-text">Action Frame
+- primitive: propel
+- agent:
+- object:
+</code></pre>
+<pre class="language-text"><code class="language-text">Action Frame
+- primitive: move-possession
+- agent: [animate object before verb]
+- coagent:
+- object: [inanimate object after verb ]
+</code></pre>
+<h2 id="hierarchical-actions-and-sub-actions">Hierarchical actions and sub-actions<a aria-hidden="true" class="anchor-heading icon-link" href="#hierarchical-actions-and-sub-actions"></a></h2>
+<p><img src="/./assets/action_frame_sub_action.png" alt="action frame sub action"></p>
+<p><img src="/./assets/multi_verb.png" alt="multi verb"></p>
+<h3 id="example">Example<a aria-hidden="true" class="anchor-heading icon-link" href="#example"></a></h3>
+<p>"Anika decided to have a glass of water"</p>
+<p>1) decided (verb) -> conclude
+2) Conclude frame:</p>
+<pre class="language-text"><code class="language-text">Action
+primitive: conclude
+agent: Anika
+result:  ->
+</code></pre>
+<p>3) have -> ingest
+4) Ingest subframe:</p>
+<pre class="language-text"><code class="language-text">Action
+primitive: ingest
+agent: Anika
+object: glass of water
+</code></pre>
+<h2 id="state-changes">State changes<a aria-hidden="true" class="anchor-heading icon-link" href="#state-changes"></a></h2>

@@ -1,0 +1,31 @@
+<h1 id="explanation_based_learning">Explanation_Based_Learning<a aria-hidden="true" class="anchor-heading icon-link" href="#explanation_based_learning"></a></h1>
+<p>The problem being discussed is what object could substitute for a cup if  no cups are available...</p>
+<h2 id="concept-space">Concept Space<a aria-hidden="true" class="anchor-heading icon-link" href="#concept-space"></a></h2>
+<p>How does an agent determine if an object can work as a cup:</p>
+<p>Prior knowledge of cups:</p>
+<ul>
+<li>Object -> has -> Bottom
+<ul>
+<li>Bottom -> is -> Flat</li>
+</ul>
+</li>
+<li>Object -> made-of -> Porcelain</li>
+<li>Object -> has -> Decoration</li>
+<li>Object -> has -> Concavity</li>
+<li>Object -> is -> Light</li>
+<li>Object -> has -> Handle</li>
+</ul>
+<p>Agent wants to prove:</p>
+<ul>
+<li>Object -> is -> Cup</li>
+</ul>
+<p>A prior knowledge relationship looks like this:</p>
+<p><img src="/./assets/briefcase_prior_knowledge.png" alt="prior knowledge"></p>
+<p>Where the yellow arrows indicate causality</p>
+<h2 id="abstraction">Abstraction<a aria-hidden="true" class="anchor-heading icon-link" href="#abstraction"></a></h2>
+<p>AI agent has to abstract from other concepts to a concept that it can use for any object.</p>
+<p>1) A cup must be stable
+2) A brick is stable because it has a flat bottom
+3) A cup is stable because it has a flat bottom, like a brick</p>
+<p><img src="/./assets/transfer_learning.png" alt="transfer learning"></p>
+<h2 id="analogical-transfer">Analogical Transfer<a aria-hidden="true" class="anchor-heading icon-link" href="#analogical-transfer"></a></h2>

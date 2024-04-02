@@ -1,0 +1,20 @@
+<h1 id="generate_and_test">Generate_and_Test<a aria-hidden="true" class="anchor-heading icon-link" href="#generate_and_test"></a></h1>
+<ul>
+<li>Given a problem, generate potential solutions and test the generated solutions</li>
+</ul>
+<p>The loop is:</p>
+<p>1) Generate solutions
+2) Test generated solutions
+3) Prune/merge results to unque set w/ linking to parent/child states
+4) Repeat</p>
+<h2 id="smart-generators">Smart Generators<a aria-hidden="true" class="anchor-heading icon-link" href="#smart-generators"></a></h2>
+<ul>
+<li>Creates possible next states</li>
+<li>To make the generator "smart" it should not regenrate any duplicate or previous states, or generate illegal states</li>
+</ul>
+<h2 id="smart-testers">Smart Testers<a aria-hidden="true" class="anchor-heading icon-link" href="#smart-testers"></a></h2>
+<ul>
+<li>Tester enforces problem constraints</li>
+<li>"Smart" testers remove illegal states that have been generated</li>
+</ul>
+<h2 id="generate-and-test-in-an-unconstrained-domain">Generate and Test in an Unconstrained Domain<a aria-hidden="true" class="anchor-heading icon-link" href="#generate-and-test-in-an-unconstrained-domain"></a></h2>
