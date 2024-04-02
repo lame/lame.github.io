@@ -107,3 +107,4 @@ publishing:
     enablePrettyLinks: true
     searchMode: search
     siteUrl: https://lame.github.io
+    assetsPrefix: ./notes/assets/
